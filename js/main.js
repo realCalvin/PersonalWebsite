@@ -5,6 +5,8 @@ $(function(){
     $("#experience-hide").hide();
     $("#project-hide").hide();
     $("#contact-hide").hide();
+    $("#my-email").hide();
+    $("#my-phone").hide();
     $(window).scroll(function() {
         
        // READS SCROLL POSITION
@@ -64,4 +66,11 @@ $(function(){
             $("#main-contact").animate({bottom: "+0px"}, 1300);
         }
     });
+    $("#mail-icon").mouseover(function(){
+        $("#my-email").show(600);
+    });
+    $("#phone-icon").mouseover(function(){
+        $("#my-phone").show(600);
+    });
+    
 });
