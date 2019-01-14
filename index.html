@@ -38,7 +38,7 @@
         </div>
 
         <!-- NAVBAR -->
-        <nav class="navbar sticky-top navbar-expand-lg">
+        <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
@@ -72,11 +72,12 @@
         <!--ABOUT ME -->
         <div class="container-fluid" id="about-me">
             <p id="about"> </p>
-            <div class="my-header" id="about-header">ABOUT ME</div>
-            <div class="header-bar"></div>
-            <div class="row">
+            <div id="about-hide">
+                <div class="my-header" id="about-header">ABOUT ME</div>
+                <div class="header-bar" id="about-bar"></div>
+                <div class="row" id="about-body">
                 <div class="col-lg-4 col-md-12 col-sm-12" id="profile-img">
-                    <img src="img/profile.jpg" class="img-responsive" height="380" width="290">
+                    <img src="img/profile.jpg" class="img-responsive" id="my-img" height="380" width="290">
                 </div>
                 <div class="col-lg-8 col-md-12 col-sm-12" id="about-text">
                     <strong><h3>Hello There!</h3></strong>
@@ -93,14 +94,16 @@
                     </ul>
                 </div>
             </div>
+            </div>
         </div>
 
         <!--SKILLS-->
         <div id="skills">
             <p id="skill"> </p>
-            <div class="my-header" id="skills-header">SKILLS</div>
-            <div class="header-bar"></div>
-            <div class="row">
+            <div id="skills-hide">
+                <div class="my-header" id="skills-header">SKILLS</div>
+                <div class="header-bar" id="skills-bar"></div>
+                <div class="row">
                 <div class="col-md-12" id="skills-info">
                     <p id="skills-p">I have been coding since Fall of 2017 and have taken two coding courses at my university so far. In my freetime, I either brush up languages I know, or explore and pick up a new language that looks interesting!</p>
                     <div class="row" id="my-languages">
@@ -154,21 +157,26 @@
                     </div>
                 </div>
             </div>
+            </div>
         </div>
 
         <!--WORK EXPERIENCE-->
         <div id="experience">
             <p id="exp"> </p>
-            <div class="my-header" id="experience-header">WORK EXPERIENCE</div>
-            <div class="header-bar"></div>
-            <strong><h3>SOFTWARE ENGINEERING INTERNSHIP</h3></strong>
-            <h5>Still in progress..</h5>
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <h5><strong>Company:</strong> IpserLab </h5>
+            <div id="experience-hide">
+                <div class="my-header" id="experience-header">WORK EXPERIENCE</div>
+                <div class="header-bar" id="experience-bar"></div>
+                <div id="first-job">
+                    <strong><h3>SOFTWARE ENGINEERING INTERNSHIP</h3></strong>
+                    <h5>Still in progress..</h5>
                 </div>
-                <div class="col-12 col-md-6">
-                    <h5><strong>Period:</strong> November 2018 - Present</h5>
+                <div class="row">
+                    <div class="col-12 col-md-6" id="first-company">
+                        <h5><strong>Company:</strong> IpserLab </h5>
+                    </div>
+                    <div class="col-12 col-md-6" id="first-period">
+                        <h5><strong>Period:</strong> November 2018 - Present</h5>
+                    </div>
                 </div>
             </div>
         </div>
@@ -176,12 +184,13 @@
         <!--PROJECTS-->
         <div id="projects">
             <p id="proj"> </p>
-            <div class="my-header" id="projects-header">PROJECTS</div>
-            <div class="header-bar"></div>
-            <div class="container-fluid">
+            <div id="project-hide">
+                <div class="my-header" id="projects-header">PROJECTS</div>
+                <div class="header-bar" id="project-bar"></div>
+                <div class="container-fluid">
                 <div class="row">
                     <!-- TIC TAC TOE -->
-                    <div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-3">
+                    <div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-3" id="project1">
                         <div class="card border-danger">
                             <div class="card-header bg-danger">
                                 <h5 class="card-title">On-Board Tic Tac Toe</h5>
@@ -193,7 +202,7 @@
                         </div>
                     </div>
                     <!-- RGB LED -->
-                    <div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-3">
+                    <div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-3" id="project2">
                         <div class="card border-primary">
                             <div class="card-header bg-primary">
                                 <h5 class="card-title">Touchscreen RGB LED Strip</h5>
@@ -205,7 +214,7 @@
                         </div>
                     </div>
                     <!-- Personal Website -->
-                    <div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-3">
+                    <div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-3" id="project3">
                         <div class="card border-success">
                             <div class="card-header bg-success">
                                 <h5 class="card-title">Personal Website</h5>
@@ -218,7 +227,7 @@
                     </div>
                     <br>
                     <!-- IR Beacon Robot -->
-                    <div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-3">
+                    <div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-3" id="project4">
                         <div class="card border-warning">
                             <div class="card-header bg-warning">
                                 <h5 class="card-title">IR Beacon Robot</h5>
@@ -231,19 +240,21 @@
                     </div>
                 </div>
             </div>
+            </div>
         </div>
 
         <!--CONTACT -->
         <div id="contact">
             <p id="cont"> </p>
-            <div class="my-header" id="contact-header">CONTACT ME</div>
-            <div class="header-bar" style="color: white"></div>
-            <div class="container-fluid">
+            <div id="contact-hide">
+                <div class="my-header" id="contact-header">CONTACT ME</div>
+                <div class="header-bar" id="contact-bar" style="color: white"></div>
+                <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
-                        <p>Have a question? Reach out to me. I am open for any questions!</p>
+                        <div id="contact-question"><p>Have a question? Reach out to me. I am open for any questions!</p></div>
 
-                        <div class="contact-form">
+                        <div class="contact-form" id="main-contact">
                             <form id="contact-form" method="post" action="php/contact.php">
                                 <div class="row">
                                     <div class="col-sm-12 col-md-12  mb-2">
@@ -265,6 +276,7 @@
 
                     </div>
                 </div>
+            </div>
             </div>
         </div>
 

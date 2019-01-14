@@ -1,11 +1,13 @@
-html, body{
-    height: 100%;
-    width: 100%;
+html{
     overflow-x: hidden;
     font-family: 'Ubuntu', sans-serif;
     scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
 }
 body{
+    height: 100%;
+    width: 100%;
     background: url(../img/dark.jpg) no-repeat center center fixed;
 }
 .container-fluid{
@@ -14,7 +16,6 @@ body{
     width: 100%;
 }
 #particles-js{
-    
     display: table;
 	height: 100%;
 	position: relative;
@@ -74,7 +75,6 @@ body{
 }
 .navbar{
     background-color: rgba(27,27,27,0.9);
-    
 }
 .navbar li {
     font-size: 20px;
@@ -112,44 +112,69 @@ body{
     height: 100%;
     width: 100%;
     text-align: center;
-    background-color: #eee;
+    background-color: #1B1B1B;
+    color: white;
 }
 #about-header{
     font-size: 45px;
     text-align: center;
     padding: 20px 20px 0px 20px;
+    position: relative;
+    left: 2000px;
+}
+#about-bar{
+    position: relative;
+    right: 2000px;
 }
 #about-text{
     padding-left: 80px;
     padding-right: 40px;
+    position: relative;
+    bottom: 400px;
+    opacity: 0.2;
 }
 #profile-img img{
     margin: 10px 10px 50px 10px;
     border-radius: 5%;
+    position: relative;
+    right: 500px;
 }
 #about-text li{
     list-style: none;
     margin-right: 35px;
     font-size: 22px;
 }
-
 #skills{
     height: 120%;
     width: 100%;
     text-align: center;
-    background-color: #1B1B1B;
+    background-color: #211F1F;
     color: white;
 }
 #skills-header{
     text-align: center;
     font-size: 45px;
     padding: 20px 20px 0px 20px;
+    position: relative;
+    right: 2000px;
+}
+#skills-bar{
+    position: relative;
+    left: 2000px;
 }
 #skills-p{
     margin: 25px 15% 70px 15%;
+    position: relative;
+    top: 1000px;
+}
+#my-languages{
+    position: relative;
+    bottom: 1000px;
 }
 #soft-skills{
     margin-top: 85px;
+    position: relative;
+    left: 1000px;
 }
 #soft-skills h3{
     margin-bottom: 25px;
@@ -162,11 +187,30 @@ body{
     height: 100%;
     width: 100%;
     text-align: center;
-    background-color: #eee;
+    background-color: #1B1B1B;
+    color: white;
 }
 #experience-header{
     font-size: 45px;
     padding: 20px 20px 0px 20px;
+    position: relative;
+    left: 1000px;
+}
+#experience-bar{
+    position: relative;
+    right: 1500px;
+}
+#first-job{
+    position: relative;
+    top: 1000px;
+}
+#first-company{
+    position: relative;
+    right: 1000px;
+}
+#first-period{
+    position: relative;
+    left: 1000px;
 }
 #experience h3{
     margin-top: 90px;
@@ -175,13 +219,35 @@ body{
 #projects{
     height: 110%;
     width: 100%;
-    background-color: #1B1B1B;
+    background-color: #211F1F;
     color: white;
 }
 #projects-header{
     font-size: 45px;
     text-align: center;
     padding: 20px 20px 0px 20px;
+    position: relative;
+    right: 1000px;
+}
+#project-bar{
+    position: relative;
+    left: 1500px;
+}
+#project1{
+    position: relative;
+    top: 1000px;
+}
+#project2{
+    position: relative;
+    bottom: 1000px;
+}
+#project3{
+    position: relative;
+    top: 1000px;
+}
+#project4{
+    position: relative;
+    bottom: 1000px;
 }
 .card-header h5{
     font-size: 30px;
@@ -191,16 +257,29 @@ body{
     width: 100%;
     color: white;
     text-align: center;
+    position: relative;
 }
 #contact-header{
     font-size: 45px;
     text-align: center;
     padding: 20px 20px 0px 20px;
+    position: relative;
+    left: 1000px;
 }
-#contact p{
+#contact-bar{
+    position: relative;
+    right: 1000px;
+}
+#contact-question{
     margin-top: 15px;
     margin-bottom: 50px;
     font-size: 18px;
+    position: relative;
+    bottom: 1000px;
+}
+#main-contact{
+    position: relative;
+    bottom: 200px;
 }
 #contact input, #contact textarea{
     width: 35em !important;
