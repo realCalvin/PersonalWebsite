@@ -616,13 +616,16 @@ footer .fab{
 
 @media screen and (max-height: 655px){
     #about-me{
-        min-height: 265%;
+        min-height: 300% !important;
     }
     #skills{
-        min-height: 320%;
+        min-height: 380% !important;
+    }
+    #experience{
+        min-height: 180% !important;
     }
     #projects{
-        min-height: 230%;
+        min-height: 280% !important;
     }
 }
 
