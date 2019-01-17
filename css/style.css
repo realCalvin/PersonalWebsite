@@ -560,8 +560,11 @@ footer .fab{
 
 @media screen and (max-width: 580px){
     #about-me{
-        min-height: 300% !important;
+        min-height: 480% !important;
         text-align: left;
+    }
+    #about-me p{
+        font-size: 18px;
     }
     #about-me img{
         margin-left: 70px;
@@ -570,7 +573,7 @@ footer .fab{
         font-size: 22px;
     }
     #skills{
-        min-height: 255% !important;
+        min-height: 285% !important;
     }
     #skills .devicon{
         font-size: 55px;
@@ -585,7 +588,7 @@ footer .fab{
         padding-left: 80px;
     }
     #projects{
-        min-height: 190% !important;
+        min-height: 220% !important;
     }
     .fas {
         font-size: 35px;
@@ -594,7 +597,7 @@ footer .fab{
         font-size: 18px;
     }
     .card {
-        height: 90%;
+        height: 100%;
     }
     .card-header{
         height: 60px !important;
@@ -608,6 +611,9 @@ footer .fab{
     
     hr {
         margin: 60px 0px -50px 0px;
+    }
+    #contact{
+        min-height: 180% !important;
     }
     #contact input, #contact textarea{
         width: 15em !important;
