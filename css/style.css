@@ -253,7 +253,7 @@ body{
     font-size: 30px;
 }
 #contact{
-    height: 80%;
+    height: 85%;
     width: 100%;
     color: white;
     text-align: center;
@@ -286,6 +286,13 @@ body{
 }
 #contact .btn{
     width: 7em !important;
+}
+.alert{
+    display: none;
+}
+.fa-check{
+    color: limegreen;
+    font-size: 1em !important;
 }
 .form-control:hover{
     background-color: transparent;
@@ -526,7 +533,6 @@ footer .fab{
 
 /* Small devices (tablets, 768px and up) */
 @media screen and (max-width: 770px){
-    
     #projects{
         min-height: 170% !important;
     }
@@ -622,10 +628,28 @@ footer .fab{
 
 @media screen and (min-height: 660px) and (max-height: 760px){
     #about-me{
-        min-height: 220%;
+        min-height: 270% !important;
     } 
+    #about-me p{
+        font-size: 16px;
+    }
+    #skills{
+        min-height: 330% !important;
+    }
+    #experience{
+        min-height: 130% !important;
+    }
+    #projects{
+        min-height: 250% !important;
+    }
+    #contact{
+        min-height: 150% !important;
+    }
+    .card-block{
+        height: 140px;
+    }
     #contact input, #contact textarea{
-    width: 15em !important;
+        width: 15em !important;
     }
 }
 
@@ -639,6 +663,7 @@ footer .fab{
     #projects{
         min-height: 170%;
     }
+    
     
 }
 @media screen and (min-height: 1000px){
