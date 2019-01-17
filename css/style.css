@@ -562,7 +562,7 @@ footer .fab{
     body{
         height: 100%;
         width: 100%;
-        background: url(../img/dark.jpg) no-repeat center center;
+        background-color: black;
     }
     #about-me{
         min-height: 480% !important;
