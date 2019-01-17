@@ -569,16 +569,16 @@ footer .fab{
         overflow: hidden;
     }
     #name{
-        font-size: 38px;
+        font-size: 28px !important;
     }
     #particles-js h1{
-        font-size: 26px;
+        font-size: 16px  !important;
     }
     #particles-js p{
-        font-size: 16px;
+        font-size: 6px  !important;
     }
     #view-btn{
-        font-size: 10px;
+        font-size: 8px  !important;
     }
     #about-me{
         min-height: 480% !important;
@@ -634,7 +634,7 @@ footer .fab{
         margin: 60px 0px -50px 0px;
     }
     #contact{
-        min-height: 180% !important;
+        min-height: 150% !important;
     }
     #contact input, #contact textarea{
         width: 15em !important;
