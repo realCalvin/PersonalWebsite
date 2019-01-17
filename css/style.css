@@ -9,6 +9,10 @@ body{
     height: 100%;
     width: 100%;
     background: url(../img/dark.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
 }
 .container-fluid{
     padding: 0;
@@ -613,7 +617,7 @@ footer .fab{
         margin: 60px 0px -50px 0px;
     }
     #contact{
-        min-height: 180% !important;
+        min-height: 200% !important;
     }
     #contact input, #contact textarea{
         width: 15em !important;
