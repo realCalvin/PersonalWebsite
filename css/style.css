@@ -622,7 +622,7 @@ footer .fab{
         margin: 60px 0px -50px 0px;
     }
     #contact{
-        min-height: 200% !important;
+        min-height: 180% !important;
     }
     #contact input, #contact textarea{
         width: 15em !important;
