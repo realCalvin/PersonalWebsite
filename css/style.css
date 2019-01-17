@@ -560,7 +560,7 @@ footer .fab{
 
 @media screen and (max-width: 580px){
     #about-me{
-        min-height: 230% !important;
+        min-height: 300% !important;
         text-align: left;
     }
     #about-me img{
