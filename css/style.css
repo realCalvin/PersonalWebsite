@@ -63,15 +63,12 @@ body{
     text-shadow: none;
 }
 .fa-arrow-right{
-    font-size: 0.8em !important;
+    font-size: 0.4em !important;
     padding-left: 10px;
 }
 #landing-page a{
     border: solid white 2px;
     color: white;
-}
-#left-item{
-    margin-left: 170px;
 }
 .navbar{
     background-color: rgba(27,27,27,0.9);
@@ -249,11 +246,51 @@ body{
     position: relative;
     bottom: 1000px;
 }
+.card-header{
+    height: 100px;
+}
 .card-header h5{
     font-size: 30px;
 }
+.card-block{
+    padding: 10px 10px 25px 10px;
+}
+.card-block .btn{
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+}
+p {
+    font-size: 24px;
+}
+.card-block p{
+    font-size: 20px;
+    color: black;
+}
+.card a{
+    border: 1px solid;
+    margin-bottom: 8px;
+    color: black;
+}
+.card a:hover{
+    color: white; 
+    background-color: #ff5252; 
+    transition: 0.3s;
+    font-size: 25px;
+}
+.card{
+    margin-top: 60px;
+    height: 100%;
+    margin-right: 18px;
+    text-align: center;
+}
+.card:hover{
+    transition: 0.4s;
+    height: 110%;
+    box-shadow: 1px 1px 20px white;
+}
 #contact{
-    height: 85%;
+    height: 105%;
     width: 100%;
     color: white;
     text-align: center;
@@ -311,46 +348,7 @@ body{
     transition: 0.6s;
     font-size: 22px;
 }
-.card{
-    margin-top: 60px;
-    height: 100%;
-    margin-right: 18px;
-    text-align: center;
-}
-.card:hover{
-    transition: 0.4s;
-    height: 110%;
-    box-shadow: 1px 1px 20px white;
-}
-.card-header{
-    height: 100px;
-}
-.card-block{
-    padding: 10px 10px 25px 10px;
-}
-.card-block .btn{
-    position: absolute;
-    bottom: 0;
-    left: 40%;
-}
-p {
-    font-size: 24px;
-}
-.card-block p{
-    font-size: 20px;
-    color: black;
-}
-.card a{
-    border: 1px solid;
-    margin-bottom: 8px;
-    color: black;
-}
-.card a:hover{
-    color: white; 
-    background-color: #ff5252; 
-    transition: 0.3s;
-    font-size: 25px;
-}
+
 tab{
     padding-left: 5em;
 }
@@ -430,297 +428,308 @@ footer .fab{
     display: block;
 }
 
-@media only screen and (max-width: 1920px){
-    #about-me{
-        min-height: 100% !important;
+/* PHONE */
+@media only screen and (min-width: 320px) {
+    /* LANDING PAGE */
+    #name{
+        font-size: 40px;
     }
-    #about-me h3{
+    .background-text h1{
+        font-size: 25px;
+    }
+    .background-text p{
+        font-size: 15px;
+    }
+    #view-btn{
+        font-size: 13px;
+    }
+    .fa-arrow-right{
+        font-size: 0.8em !important;
+    }
+    #view-btn:hover{
+        font-size: 16px;
+    }
+    
+    /* ABOUT PAGE */
+    #about-me{
+        height: 215%;
+    }
+    #about-header{
+        font-size: 40px;
+    }
+    #about-text{
+        padding-right: 80px;
+    }
+    #about-text h3{
         font-size: 30px;
     }
-    #about-me p{
-        font-size: 22px;
+    #about-text p{
+        font-size: 16px;
     }
-    #about-me li{
+    #profile-img img{
+        height: 250px;
+        width: 200px;
+    }
+    #about-text li{
         font-size: 18px;
     }
+    
+    /* SKILLS */
     #skills{
-        min-height: 115% !important;
+        height: 250%;
     }
-    #skills .devicon{
-        font-size: 75px;
+    #skills-header{
+        font-size: 35px;
     }
-    #skills h4{
-        font-size: 24px;
-    }
-    #skills h3{
-        font-size: 24px;
-    }
-    #projects{
-        min-height: 100% !important; 
-    }
-    
-}
-/* Large devices (large desktops, 1200px and up) */
-@media (max-width: 1200px) {
-    
-    #about-me{
-        min-height: 140% !important;
-    }
-    .card-header{
-        text-align: center; 
-        height: 130px;
-    }
-    #skills h4{
-        font-size: 20px;
-    }
-}
-
-/* Medium devices (desktops, 992px and up) */
-@media (max-width: 990px) {
-    #left-item{
-        margin: 0;
-    }
-    p {
-        font-size: 20px;
-    }
-    #about-me {
-        min-height: 165% !important;
-    }
-    #about-me li{
+    #skills-p{
         font-size: 18px;
     }
-    .profile-img{
-        margin-top: -90px;
+    .fas{
+        font-size: 1.5em !important;
     }
-    #skills{
-        height: 150%;
+    #soft-skills p{
+        font-size: 16px;
     }
+    #soft-skills h3{
+        font-size: 20px;
+    }
+    #my-languages h4{
+        font-size: 20px;
+    }
+    .devicon{
+        font-size: 2.5em !important;
+    }
+    
+    /* EXPERIENCE */
     #experience{
-        height: 120%;
+    height: 100%;
     }
-    #experience h3{
-        font-size: 24px;
+    #experience-header{
+        font-size: 35px;
     }
-    #experience h4{
+    #first-job{
+        font-size: 20px;
+    }
+    #first-job h5{
+        font-size: 18px;
+    }
+    #first-company{
+        padding-top: 20px;
         font-size: 20px;
     }
     #experience h5{
-        font-size: 16px;
-    }
-    tab1{
-        padding-left: 5em;
-    }
-    #projects{
-        height: 120%;
-    }
-    .card h5{
-        font-size: 30px;
-    }
-    .card p{
-        font-size: 18px;
-    }
-    .card-block{
-        height: 110px;
-    }
-    .card-header{
-        height: 85px !important;
-    }
-    #contact{
-        height: 120%;
-    }
-    
-}
-
-/* Small devices (tablets, 768px and up) */
-@media screen and (max-width: 770px){
-    #projects{
-        min-height: 170% !important;
-    }
-    #skills{
-        min-height: 200% !important;
-    }
-    #soft-skills .fas{
-        margin-top: 30px;
-    }
-    p {
-        font-size: 18px;
-    }
-    #about-text li {
-        font-size: 16px;;
-    }
-    img{
-        height: 250px;
-        width: auto;
-        padding-left: 20px;
-    }
-    #contact input, #contact textarea{
-    width: 20em !important;
-    }
-}
-
-@media screen and (max-width: 580px){
-    html {
-        background: url(../img/dark.jpg) no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        height: 100%;
-        overflow: hidden;
-    }
-    #name{
-        font-size: 28px !important;
-    }
-    #particles-js h1{
-        font-size: 16px  !important;
-    }
-    #particles-js p{
-        font-size: 6px  !important;
-    }
-    #view-btn{
-        font-size: 8px  !important;
-    }
-    #about-me{
-        min-height: 480% !important;
-        text-align: left;
-    }
-    #about-me p{
-        font-size: 18px;
-    }
-    #about-me img{
-        margin-left: 70px;
-    }
-    #about-me h3{
-        font-size: 22px;
-    }
-    #skills{
-        min-height: 285% !important;
-    }
-    #skills .devicon{
-        font-size: 55px;
-    }
-    #skills h4{
-        font-size: 18px;
-    }
-    #skills h3{
-        font-size: 22px;
-    }
-    .job-details{
-        padding-left: 80px;
-    }
-    #projects{
-        min-height: 220% !important;
-    }
-    .fas {
-        font-size: 35px;
-    }
-    #soft-skills p {
-        font-size: 18px;
-    }
-    .card {
-        height: 100%;
-    }
-    .card-header{
-        height: 60px !important;
-    }
-    .card h5 {
         font-size: 20px;
     }
-    .card p{
-        font-size: 16px;
+    #experience h3{
+        font-size: 20px;
     }
     
-    hr {
-        margin: 60px 0px -50px 0px;
+    /* PROJECTS */
+    #projects{
+        height: 240%;
     }
+    #projects-header{
+        font-size: 35px;
+    }
+    .card{
+        height: 250px;
+    }
+    .card-header{
+        height: 60px;
+    }
+    .card-header h5{
+        font-size: 20px;
+    }
+    .card-block .btn{
+        font-size: 12px;
+    }
+    .card-block p{
+        font-size: 18px;
+    }
+    .card:hover{
+        height: 105%;
+    }
+    
+    /* CONTACT */
     #contact{
-        min-height: 150% !important;
+        height: 120%;
+    }
+    #contact-header{
+        font-size: 35px;
+    }
+    #contact-question p{
+        font-size: 15px;
+        padding-right: 10px;
+    }
+    #main-contact{
+        position: relative;
+        bottom: 200px;
     }
     #contact input, #contact textarea{
-        width: 15em !important;
+        width: 14em !important;
+    }
+    #contact .btn{
+        width: 8em !important;
+        font-size: 12px;
+    }
+    #phone-icon{
+       font-size: 2.35em !important;
+    }
+    #mail-icon{
+        font-size: 2.35em !important;
     }
 }
 
-@media screen and (max-height: 655px){
+/* TABLETS */
+@media only screen and (min-width: 760px) {
+    /* LANDING PAGE */
+    #name{
+        font-size: 70px;
+    }
+    .background-text h1{
+        font-size: 40px;
+    }
+    .background-text p{
+        font-size: 20px;
+    }
+    #view-btn{
+        font-size: 18px;
+    }
+    .fa-arrow-right{
+        font-size: 0.5em !important;
+    }
+    #view-btn:hover{
+        font-size: 22px;
+    }
+    
+    /* ABOUT PAGE */
     #about-me{
-        min-height: 300% !important;
+        height: 130%;
     }
-    #skills{
-        min-height: 380% !important;
+    #about-header{
+        font-size: 45px;
     }
-    #experience{
-        min-height: 180% !important;
+    #profile-img img{
+        height: 350px;
+        width: 275px;
     }
-    #projects{
-        min-height: 280% !important;
+    #about-text{
+        padding-right: 80px;
     }
-}
+    #about-text h3{
+        font-size: 35px;
+    }
+    #about-text p{
+        font-size: 22px;
+    }
 
-@media screen and (min-height: 660px) and (max-height: 760px){
-    #about-me{
-        min-height: 300% !important;
-    } 
-    #about-me p{
-        font-size: 16px;
+    #about-text li{
+        font-size: 20px;
     }
+    
+    /* SKILLS */
     #skills{
-        min-height: 380% !important;
+        height: 150%;
     }
+    #skills-header{
+        font-size: 45px;
+    }
+    #skills-p{
+        font-size: 25px;
+    }
+    .fas{
+        font-size: 3em !important;
+    }
+    #soft-skills p{
+        font-size: 20px;
+        margin-right: 15px;
+    }
+    #soft-skills h3{
+        font-size: 25px;
+    }
+    #my-languages h4{
+        font-size: 25px;
+    }
+    .devicon{
+        font-size: 4em !important;
+    }
+    
+    /* EXPERIENCE */
     #experience{
-        min-height: 130% !important;
+        height: 100%;
     }
+    #experience-header{
+        font-size: 45px;
+    }
+    #first-job{
+        font-size: 30px;
+    }
+    #first-job h5{
+        font-size: 28px;
+    }
+    #first-company{
+        padding-top: 20px;
+        font-size: 30px;
+    }
+    #experience h5{
+        font-size: 30px;
+    }
+    #experience h3{
+        font-size: 30px;
+    }
+    
+    /* PROJECTS */
     #projects{
-        min-height: 250% !important;
+        height: 155%;
     }
+    #projects-header{
+        font-size: 45px;
+    }
+    .card{
+        height: 400px;
+    }
+    .card-header{
+        height: 80px;
+    }
+    .card-header h5{
+        font-size: 25px;
+    }
+    .card-block .btn{
+        font-size: 18px;
+    }
+    .card-block p{
+        font-size: 26px;
+    }
+    .card:hover{
+        height: 90%;
+    }
+    
+    /* CONTACT */
     #contact{
-        min-height: 150% !important;
+        height: 95%;
     }
-    .card-block{
-        height: 140px;
+    #contact-header{
+        font-size: 45px;
+    }
+    #contact-question p{
+        font-size: 25px;
+        padding-right: 10px;
+    }
+    #main-contact{
+        position: relative;
+        bottom: 200px;
     }
     #contact input, #contact textarea{
-        width: 15em !important;
+        width: 24em !important;
     }
-}
-
-@media screen and (min-height: 780px) and (max-height: 980px){
-    #about-me{
-        min-height: 180%;
-    } 
-    #skills {
-        min-height: 220%;
+    #contact .btn{
+        width: 8em !important;
+        font-size: 22px;
     }
-    #projects{
-        min-height: 170%;
+    #phone-icon{
+       font-size: 2.35em !important;
     }
-    
-    
-}
-@media screen and (min-height: 1000px){
-    #about-me{
-        min-height: 115%;
-    } 
-    #skills {
-        min-height: 100%;
-    }
-    #experience{
-        min-height: 100%;
-    }
-    #projects{
-        min-height: 100%;
-    }
-}
-@media screen and (min-height: 1300px){
-    #about-me{
-        min-height: 100% !important;
-    } 
-    #skills {
-        min-height: 100%;
-    }
-    #experience{
-        min-height: 100%;
-    }
-    #projects{
-        min-height: 100%;
+    #mail-icon{
+        font-size: 2.35em !important;
     }
 }
