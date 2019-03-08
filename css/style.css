@@ -286,7 +286,7 @@ p {
 }
 .card:hover{
     transition: 0.4s;
-    height: 110%;
+
     box-shadow: 1px 1px 20px white;
 }
 #contact{
@@ -368,15 +368,15 @@ hr{
     font-size: 40px;
 }
 .fas:hover{
-    transition: 0.4s;
-    font-size: 50px;
+    transition: 0.5s;
+    font-size: 80px !important;
 }
 .devicon{
-    font-size: 80px !important;
+    font-size: 70px !important;
 }
 .devicon:hover{
     transition: 0.5s;
-    font-size: 100px !important;
+    font-size: 110px !important;
 }
 footer{
     padding: 65px 95px 50px 95px;
@@ -546,9 +546,7 @@ footer .fab{
     .card-block p{
         font-size: 18px;
     }
-    .card:hover{
-        height: 105%;
-    }
+
     
     /* CONTACT */
     #contact{
@@ -604,7 +602,7 @@ footer .fab{
     
     /* ABOUT PAGE */
     #about-me{
-        height: 130%;
+        height: 140%;
     }
     #about-header{
         font-size: 45px;
@@ -698,10 +696,7 @@ footer .fab{
         font-size: 18px;
     }
     .card-block p{
-        font-size: 26px;
-    }
-    .card:hover{
-        height: 90%;
+        font-size: 20px;
     }
     
     /* CONTACT */
