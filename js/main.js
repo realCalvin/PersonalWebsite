@@ -30,7 +30,7 @@ $(function(){
             $("#about-text").animate({top: "+0px",opacity: 1}, 900);
         }
         // SKILLS PAGE
-        if(scrollPos > 1800){
+        if(scrollPos > 2100){
             $("#skills-hide").show();  
             $("#skills-header").animate({left: "+0px"}, 1000);
             $("#skills-p").animate({top: "+0px"}, 1000);
@@ -39,7 +39,7 @@ $(function(){
             $("#soft-skills").animate({left: "+0px"}, 1500);
         }
         // EXPERIENCE PAGE
-        if(scrollPos > 2900){
+        if(scrollPos > 3150){
             $("#experience-hide").show();
             $("#experience-header").animate({left: "+0px"}, 1000);
             $("#experience-bar").animate({right: "+0px"}, 1000);
@@ -48,7 +48,7 @@ $(function(){
             $("#first-period").animate({left: "+0px"}, 1000);
         }
         // PROJECT PAGE
-        if(scrollPos > 4100){
+        if(scrollPos > 4450){
             $("#project-hide").show();
             $("#projects-header").animate({right: "+0px"}, 1000);
             $("#project-bar").animate({left: "+0px"}, 1000);
@@ -58,7 +58,7 @@ $(function(){
             $("#project4").animate({bottom: "+0px"}, 1000);
         }
         // CONTACT PAGE
-        if(scrollPos > 5200){
+        if(scrollPos > 5850){
             $("#contact-hide").show();
             $("#contact-header").animate({left: "+0px"}, 1000);
             $("#contact-bar").animate({left: "+0px"}, 1000);
