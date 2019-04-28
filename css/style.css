@@ -8,8 +8,12 @@ html{
 body{
     height: 100%;
     width: 100%;
-    background: url(../img/dark.jpg) no-repeat center center fixed;
+    background: url(../img/dark.jpg) center center fixed;
 }
+#hide-nav{
+    visibility: hidden;
+}
+
 .container-fluid{
     padding: 0;
     height: 100%;
@@ -117,17 +121,17 @@ body{
     text-align: center;
     padding: 20px 20px 0px 20px;
     position: relative;
-    left: 2000px;
+    left: 500px;
 }
 #about-bar{
     position: relative;
-    right: 2000px;
+    right: 500px;
 }
 #about-text{
     padding-left: 80px;
     padding-right: 40px;
     position: relative;
-    bottom: 400px;
+    bottom: 500px;
     opacity: 0.2;
 }
 #profile-img img{
@@ -153,25 +157,25 @@ body{
     font-size: 45px;
     padding: 20px 20px 0px 20px;
     position: relative;
-    right: 2000px;
+    right: 500px;
 }
 #skills-bar{
     position: relative;
-    left: 2000px;
+    left: 500px;
 }
 #skills-p{
     margin: 25px 15% 70px 15%;
     position: relative;
-    top: 1000px;
+    top: 500px;
 }
 #my-languages{
     position: relative;
-    bottom: 1000px;
+    bottom: 500px;
 }
 #soft-skills{
     margin-top: 85px;
     position: relative;
-    left: 1000px;
+    left: 500px;
 }
 #soft-skills h3{
     margin-bottom: 25px;
@@ -191,23 +195,23 @@ body{
     font-size: 45px;
     padding: 20px 20px 0px 20px;
     position: relative;
-    left: 1000px;
+    left: 500px;
 }
 #experience-bar{
     position: relative;
-    right: 1500px;
+    right: 500px;
 }
 #first-job{
     position: relative;
-    top: 1000px;
+    top: 500px;
 }
 #first-company{
     position: relative;
-    right: 1000px;
+    right: 500px;
 }
 #first-period{
     position: relative;
-    left: 1000px;
+    left: 500px;
 }
 #experience h3{
     margin-top: 90px;
@@ -224,27 +228,27 @@ body{
     text-align: center;
     padding: 20px 20px 0px 20px;
     position: relative;
-    right: 1000px;
+    right: 500px;
 }
 #project-bar{
     position: relative;
-    left: 1500px;
+    left: 500px;
 }
 #project1{
     position: relative;
-    top: 1000px;
+    left: 500px;
 }
 #project2{
     position: relative;
-    bottom: 1000px;
+    top: 500px;
 }
 #project3{
     position: relative;
-    top: 1000px;
+    top: 500px;
 }
 #project4{
     position: relative;
-    bottom: 1000px;
+    right: 500px;
 }
 .card-header{
     height: 100px;
@@ -301,22 +305,22 @@ p {
     text-align: center;
     padding: 20px 20px 0px 20px;
     position: relative;
-    left: 1000px;
+    left: 500px;
 }
 #contact-bar{
     position: relative;
-    right: 1000px;
+    right: 500px;
 }
 #contact-question{
     margin-top: 15px;
     margin-bottom: 50px;
     font-size: 18px;
     position: relative;
-    bottom: 1000px;
+    bottom: 300px;
 }
 #main-contact{
     position: relative;
-    bottom: 200px;
+    bottom: 500px;
 }
 #contact input, #contact textarea{
     width: 35em !important;

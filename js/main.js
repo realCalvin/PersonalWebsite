@@ -1,4 +1,13 @@
+// LOADING SCREEN
+window.addEventListener("load", function(){
+    var loading = document.getElementById("load_screen");
+    setTimeout(function(){
+        document.body.removeChild(loading);
+    }, 1800)
+});
+
 // JQUERY
+
 $(function(){
     $("#navbar").hide();
     $("#about-hide").hide();
@@ -9,20 +18,22 @@ $(function(){
     $("#my-email").hide();
     $("#my-phone").hide();
     $(".alert").hide();
+
     $(window).scroll(function() {
         
        // READS SCROLL POSITION
        var scrollPos = $(document).scrollTop();
         
        // NAVBAR
-       if(scrollPos > 700){
-          $("#navbar").show(800);   
-       }else{
-          $("#navbar").hide(800);
+        if(scrollPos > 700){
+          $("#hide-nav").css("visibility", "visible"); 
+          $("#navbar").show(600);
        }
-        
+       else{
+          $("#navbar").hide();
+       }
        // ABOUT PAGE
-        if(scrollPos > 500){
+        if(scrollPos > $("#about-me").offset().top-350){
             $("#about-hide").show();
             $("#my-img").animate({left: "+0px"}, 600);
             $("#about-header").animate({left: "+0px"}, 1000);
@@ -30,7 +41,7 @@ $(function(){
             $("#about-text").animate({top: "+0px",opacity: 1}, 900);
         }
         // SKILLS PAGE
-        if(scrollPos > 1750){
+        if(scrollPos > $("#skills").offset().top-350){
             $("#skills-hide").show();  
             $("#skills-header").animate({left: "+0px"}, 1000);
             $("#skills-p").animate({top: "+0px"}, 1000);
@@ -39,7 +50,7 @@ $(function(){
             $("#soft-skills").animate({left: "+0px"}, 1500);
         }
         // EXPERIENCE PAGE
-        if(scrollPos > 2900){
+        if(scrollPos > $("#experience").offset().top-350){
             $("#experience-hide").show();
             $("#experience-header").animate({left: "+0px"}, 1000);
             $("#experience-bar").animate({right: "+0px"}, 1000);
@@ -48,17 +59,17 @@ $(function(){
             $("#first-period").animate({left: "+0px"}, 1000);
         }
         // PROJECT PAGE
-        if(scrollPos > 3950){
+        if(scrollPos > $("#projects").offset().top-350){
             $("#project-hide").show();
             $("#projects-header").animate({right: "+0px"}, 1000);
             $("#project-bar").animate({left: "+0px"}, 1000);
-            $("#project1").animate({top: "+0px"}, 1000);
-            $("#project2").animate({bottom: "+0px"}, 1000);
+            $("#project1").animate({left: "+0px"}, 1000);
+            $("#project2").animate({top: "+0px"}, 1000);
             $("#project3").animate({top: "+0px"}, 1000);
-            $("#project4").animate({bottom: "+0px"}, 1000);
+            $("#project4").animate({right: "+0px"}, 1000);
         }
         // CONTACT PAGE
-        if(scrollPos > 5250){
+        if(scrollPos > $("#contact").offset().top-350){
             $("#contact-hide").show();
             $("#contact-header").animate({left: "+0px"}, 1000);
             $("#contact-bar").animate({left: "+0px"}, 1000);
