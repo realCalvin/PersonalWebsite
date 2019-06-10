@@ -1,7 +1,9 @@
 @import './_variables';
 
 #navbar{
-    
+    nav{
+        background-color: $navbar-background-color;
+    }
     a{
         color: $primary-color;
         &:hover{

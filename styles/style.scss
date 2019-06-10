@@ -11,6 +11,7 @@ html, body{
     scroll-behavior: smooth;
     font-family: 'Montserrat', sans-serif;
     background-color: $background-color;
+    cursor: default;
 }
 
 .center{ // center in middle of page
@@ -54,7 +55,7 @@ hr{
 h1{
     font-family: 'Reem Kufi', sans-serif;
 }
-h1, h4{
+h1, h3, h4{
     color: $primary-color;
 }
 p, ul{

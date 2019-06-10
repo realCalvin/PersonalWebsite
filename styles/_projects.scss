@@ -38,6 +38,13 @@ $img-size: 300px;
         padding: 5px 10px;
         border: 2px solid $primary-color;
         border-radius: 8px;
+        cursor: default;
+        &:hover{
+            background-color: $primary-color;
+            color: $background-color;
+            font-size: 22px;
+
+        }
     }
     .alert-text{
         color: $primary-color;

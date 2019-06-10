@@ -1,4 +1,8 @@
 @import url(c:\Users\Calvin\Desktop\Portfolio\styles\_variables.css);
+#navbar nav {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
 #navbar a {
   color: #ff6666;
 }
@@ -118,6 +122,10 @@
   padding-left: 15%;
 }
 
+#about #about-content li {
+  font-size: 22px;
+}
+
 #skills {
   padding-top: 5%;
 }
@@ -132,17 +140,30 @@
   padding-top: 25px;
 }
 
+#skills #hard-skills h5 {
+  padding-top: 5px;
+}
+
 #skills #soft-skills {
   padding-top: 5%;
   color: black;
 }
 
 #skills #soft-skills .fas {
-  font-size: 1.5em;
+  font-size: 2.5em;
+  margin-bottom: 12px;
+}
+
+#skills #soft-skills .fas:hover {
+  font-size: 2.7em;
 }
 
 .devicon {
-  font-size: 2.6em;
+  font-size: 3.5em;
+}
+
+.devicon:hover {
+  font-size: 3.7em;
 }
 
 #projects {
@@ -196,6 +217,13 @@
   padding: 5px 10px;
   border: 2px solid #ff6666;
   border-radius: 8px;
+  cursor: default;
+}
+
+#projects .project-skills:hover {
+  background-color: #ff6666;
+  color: white;
+  font-size: 22px;
 }
 
 #projects .alert-text {
@@ -273,6 +301,7 @@ html, body {
   scroll-behavior: smooth;
   font-family: 'Montserrat', sans-serif;
   background-color: white;
+  cursor: default;
 }
 
 .center {
@@ -337,7 +366,7 @@ h1 {
   font-family: 'Reem Kufi', sans-serif;
 }
 
-h1, h4 {
+h1, h3, h4 {
   color: #ff6666;
 }
 
