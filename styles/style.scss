@@ -5,6 +5,7 @@
 @import "./_skills";
 @import "./_projects";
 @import "./_contact";
+@import "./_footer";
 
 html, body{
     height: 100%;
@@ -12,6 +13,7 @@ html, body{
     font-family: 'Montserrat', sans-serif;
     background-color: $background-color;
     cursor: default;
+    overflow-x: hidden;
 }
 
 .center{ // center in middle of page
