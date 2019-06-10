@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Calvin's Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        
+        <!-- SCRIPTs -->
+        <script src="js/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+        <!-- FONTS -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+        <!-- ICONS -->
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+
+        <!-- Linking CSS File after Bootstrap's CSS file overwrites it -->
+        <link href="css/style.css" rel="stylesheet"/>
+        
+    </head>
+
+    <body>
+        <!--LOADING PAGE-->
+        <div id="loading">
+            <div class="x" id="x1"></div>
+            <div class="x" id="x2"></div>
+            <div class="x" id="x3"></div>
+            <div id="x4"></div>
+        </div>
+        
+        <span id="main">
+            <!--LANDING PAGE-->
+            <div id="particles-js">
+                <div class="background-text">
+                    <h1><span id="name">Calvin Ly </span><br>says "Hello World."</h1>
+                    <p>Constantly Striving to Learn And Grow</p>
+                    <a href="#about" class="btn" id="view-btn">View Me<i class="fas "></i></a>
+                </div>                 
+            </div>
+
+            <!-- NAVBAR -->
+            <div id="hide-nav">
+                <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <i class="fa fa-navicon"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#particles-js" id="left-item">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#about">About<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experience">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+            </div>
+
+            <!--ABOUT ME -->
+            <div class="container-fluid" id="about-me">
+                <p id="about"> </p>
+                <div id="about-hide">
+                    <div class="my-header" id="about-header">ABOUT ME</div>
+                    <div class="header-bar" id="about-bar"></div>
+                    <div class="row" id="about-body">
+                    <div class="col-lg-4 col-md-12 col-sm-12" id="profile-img">
+                        <img src="img/profile.jpg" class="img-responsive" id="my-img" height="380" width="290">
+                    </div>
+                    <div class="col-lg-8 col-md-12 col-sm-12" id="about-text">
+                        <strong><h3>Hello There!</h3></strong>
+                        <p>I am currently an undergraduate student at San Jose State University majoring in Computer Engineering. Growing up as a curious and diligent kid, I loved tinkering with technology that my hands got a hold of. Fascinated by products that can be built using concepts of engineering was what drove me to explore this field and expand my knowledge on the software and hardware side of technology.
+                            <br><br><br></p>
+                        <strong><h3>Personal Interests</h3></strong>
+                        <p>In my freetime, I love spending time on any of the following activities:</p>
+                        <ul>
+                            <li>- Playing games</li>
+                            <li>- Watching anime</li>
+                            <li>- Socializing with friends</li>
+                            <li><i>- Sharpening</i> my coding skills</li>
+                            <li>- And of course, sleeping & eating</li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!--SKILLS-->
+            <div id="skills">
+                <p id="skill"> </p>
+                <div id="skills-hide">
+                    <div class="my-header" id="skills-header">SKILLS</div>
+                    <div class="header-bar" id="skills-bar"></div>
+                    <div class="row">
+                    <div class="col-md-12" id="skills-info">
+                        <p id="skills-p">I have been coding since Fall of 2017 and have taken two coding courses at my university so far. In my freetime, I either brush up languages I know, or explore and pick up new languages that looks interesting!</p>
+                        <div class="row" id="my-languages">
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+                                <i class="devicon devicon-cplusplus-plain-wordmark colored"></i>
+                                <h4>C++</h4>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+                                <i class="devicon devicon-c-plain-wordmark colored"></i>
+                                <h4>C</h4>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+                                <i class="devicon devicon-python-plain colored"></i>
+                                <h4>PYTHON</h4>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+                                <i class="devicon devicon-html5-plain colored"></i>
+                                <h4>HTML5</h4>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+                                <i class="devicon devicon-css3-plain colored"></i>
+                                <h4>CSS</h4>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+                                <i class="devicon devicon-javascript-plain colored"></i>
+                                <h4>JAVASCRIPT</h4>
+                            </div>
+                        </div>
+                        <div class="row" id="soft-skills">
+                            <div class="col-sm-6 col-md-3">
+                                <i class="fas fa-hands-helping"></i>
+                                <h3>Teamwork</h3>
+                                <p>Coordinate and communicate with team members professionally</p>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <i class="fas fa-cogs"></i>
+                                <h3>Problem Solving</h3>
+                                <p>Critically think for the most efficient solution possible</p>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <i class="fas fa-paper-plane"></i>
+                                <h3>Adaptability</h3>
+                                <p>Quickly familiarize myself with unfamiliar environments</p>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <i class="fas fa-graduation-cap"></i>
+                                <h3>Work Ethic</h3>
+                                <p>Determined to succeed and spend time productively on school, work, and projects</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!--WORK EXPERIENCE-->
+            <div id="experience">
+                <p id="exp"> </p>
+                <div id="experience-hide">
+                    <div class="my-header" id="experience-header">WORK EXPERIENCE</div>
+                    <div class="header-bar" id="experience-bar"></div>
+                    <div id="first-job">
+                        <strong><h3>SOFTWARE ENGINEERING INTERNSHIP</h3></strong>
+                        <h5>Still in progress..</h5>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6" id="first-company">
+                            <h5><strong>Company:</strong> IpserLab </h5>
+                        </div>
+                        <div class="col-12 col-md-6" id="first-period">
+                            <h5><strong>Period:</strong> November 2018 - Present</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--PROJECTS-->
+            <div id="projects">
+                <p id="proj"> </p>
+                <div id="project-hide">
+                    <div class="my-header" id="projects-header">PROJECTS</div>
+                    <div class="header-bar" id="project-bar"></div>
+                    <div class="container-fluid">
+                    <div class="row">
+                        <!-- TIC TAC TOE -->
+                        <div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-3" id="project1">
+                            <div class="card border-danger">
+                                <div class="card-header bg-danger">
+                                    <h5 class="card-title">On-Board Tic Tac Toe</h5>
+                                </div>
+                                <div class="card-block">
+                                    <p>A hands on Tic-Tac-Toe game using a SJ One Board, eighteen LEDs, and a breadboard.</p>
+                                    <a class="btn" href="https://github.com/realCalvin/CMPE30_TicTacToe">View</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- RGB LED -->
+                        <div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-3" id="project2">
+                            <div class="card border-primary">
+                                <div class="card-header bg-primary">
+                                    <h5 class="card-title">Touchscreen RGB LED Strip</h5>
+                                </div>
+                                <div class="card-block">
+                                    <p>RGB LED Strip (WS2811) controlled using an Arduino Uno. A touchscreen is connected to allow the user to interact with and customize the LEDs.</p>
+                                    <a class="btn" href="https://github.com/realCalvin/touch-rgb-led">View</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Personal Website -->
+                        <div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-3" id="project3">
+                            <div class="card border-success">
+                                <div class="card-header bg-success">
+                                    <h5 class="card-title">Personal Website</h5>
+                                </div>
+                                <div class="card-block">
+                                    <p>This website was coded using HTML, CSS, Bootstrap, JavaScript, JQuery, Particles.js, and Firebase. </p>
+                                    <a class="btn" href="https://github.com/realCalvin/realCalvin.github.io">View</a>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <!-- IR Beacon Robot -->
+                        <div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-3" id="project4">
+                            <div class="card border-warning">
+                                <div class="card-header bg-warning">
+                                    <h5 class="card-title">IR Beacon Robot</h5>
+                                </div>
+                                <div class="card-block">
+                                    <p>An autonomous robot built to achieve an objective that is applicable to real-life situations.</p>
+                                    <a class="btn" href="https://docs.google.com/document/d/1iISZJagATsRWbx1eLeuCm8cIUtpmS3udioqxkM_nHMI/edit">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!--CONTACT -->
+            <div id="contact">
+                <p id="cont"> </p>
+                <div id="contact-hide">
+                    <div class="my-header" id="contact-header">CONTACT ME</div>
+                    <div class="header-bar" id="contact-bar" style="color: white"></div>
+                    <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="contact-question"><p>Have a question? Reach out to me. I am open for any questions!</p></div>
+
+                            <div class="contact-form" id="main-contact">
+                                <form id="contact-form" method="post" action="php/contact.php">
+                                    <div class="row">
+                                        <!-- TO DO VALIDATION -->
+                                        <div class="col-sm-12 col-md-12  mb-2">
+                                            <input name="name" type="text" class="form-control center-block" placeholder="Name" id="my-name" required>
+                                        </div>
+                                        <div class="col-sm-12 col-md-12  mb-2">
+                                            <input name="email" type="email" class="form-control center-block" placeholder="Email" id="email" required>
+                                        </div>
+                                        <div class="col-sm-12 col-md-12  mb-2">
+                                            <textarea name="message" class="form-control center-block" placeholder="Message" rows="6" id="message" required></textarea>
+                                        </div>
+                                        <div class="col-sm-12 col-md-12  mb-2">
+                                            <input type="submit" class="btn submit" value="Submit">
+                                            <div class="alert">Your message has been sent! <i class="fas fa-check"></i></div>
+                                        </div>
+
+                                    </div>
+
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- FOOTER -->
+            <footer>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a href="mailto:Lycalvin99@gmail.com"><i class="fas fa-envelope" id="mail-icon"></i></a> 
+                            <p id="my-email">LyCalvin99@gmail.com</p>
+                        </div>
+                        <div class="col-md-2">
+                            <a href=""><i class="fas fa-phone" id="phone-icon"></i></a> 
+                            <p id="my-phone">(408) 387-3521</p>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="https://www.facebook.com/lycalvin99"><i class="fab fa-facebook"></i></a>
+                            <p></p>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="https://www.linkedin.com/in/lycalvin"><i class="fab fa-linkedin"></i></a>
+                            <p></p>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="https://github.com/realCalvin"><i class="fab fa-github-square"></i></a>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </span>
+        <!-- SCRIPT -->
+        <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/particles/particles.js"></script>
+    </body>
+
+
+</html>

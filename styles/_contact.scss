@@ -1,0 +1,43 @@
+@import './_variables';
+
+#contact{
+    color: white !important;
+    padding-top: 5%;
+
+    #contact-question{
+        text-align: center;
+    }
+    .contact-form{
+        text-align: center;
+
+        form {
+            width: 50%;
+            display: inline-block;
+        }
+        .form-control{
+            color: $secondary-color;
+        }
+        .form-control:hover{
+            background-color: transparent;
+            box-shadow: 0.5px 0.5px 15px $primary-color;
+        }
+        .submit{
+            background-color: transparent;
+            color: $primary-color;
+            border: 1px solid $primary-color;
+            padding: 8px 25px;
+        }
+        .submit:hover{
+            cursor: pointer;
+            transition: 0.6s;
+            font-size: 22px;
+        }
+    }
+    .alert{
+        display: none;
+        color: $secondary-color;
+    }
+    .fa-check{
+        color: rgb(92, 245, 92);
+    }
+}

@@ -1,0 +1,11 @@
+@import './_variables';
+
+#navbar{
+    
+    a{
+        color: $primary-color;
+        &:hover{
+            border-bottom: 3px solid $primary-color;
+        }
+    }
+}

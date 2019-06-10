@@ -1,0 +1,347 @@
+@import url(c:\Users\Calvin\Desktop\Portfolio\styles\_variables.css);
+#navbar a {
+  color: #ff6666;
+}
+
+#navbar a:hover {
+  border-bottom: 3px solid #ff6666;
+}
+
+#landing-page {
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  color: #ff6666;
+}
+
+#landing-page h1 {
+  font-size: 80px;
+}
+
+#landing-page #my-name {
+  border-bottom: 3px solid #ff6666;
+  display: inline-block;
+  line-height: 60px;
+}
+
+#my-icons {
+  font-size: 2.5em;
+  padding-top: 12px;
+}
+
+#my-icons .fas, #my-icons .fab, #my-icons .far {
+  padding: 0px 12px;
+  color: #ff6666;
+}
+
+#my-icons .fa-file-pdf:hover {
+  -webkit-animation: bounce 0.7s linear;
+          animation: bounce 0.7s linear;
+}
+
+#my-icons .fa-envelope:hover {
+  -webkit-animation: bounce 0.7s linear;
+          animation: bounce 0.7s linear;
+}
+
+#my-icons .fa-linkedin:hover {
+  -webkit-animation: bounce 0.7s linear;
+          animation: bounce 0.7s linear;
+}
+
+#my-icons .fa-github:hover {
+  -webkit-animation: bounce 0.7s linear;
+          animation: bounce 0.7s linear;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-15%);
+            transform: translateY(-15%);
+  }
+  25% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+  50% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  75% {
+    -webkit-transform: translateY(-8%);
+            transform: translateY(-8%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-15%);
+            transform: translateY(-15%);
+  }
+  25% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+  50% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  75% {
+    -webkit-transform: translateY(-8%);
+            transform: translateY(-8%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+#about {
+  padding-top: 5%;
+}
+
+#about p {
+  padding-right: 20%;
+}
+
+#about #about-content {
+  padding-top: 2%;
+  padding-left: 15%;
+}
+
+#skills {
+  padding-top: 5%;
+}
+
+#skills #skills-content {
+  padding-top: 3%;
+  padding: 0 15%;
+  text-align: center;
+}
+
+#skills #hard-skills {
+  padding-top: 25px;
+}
+
+#skills #soft-skills {
+  padding-top: 5%;
+  color: black;
+}
+
+#skills #soft-skills .fas {
+  font-size: 1.5em;
+}
+
+.devicon {
+  font-size: 2.6em;
+}
+
+#projects {
+  width: 100%;
+  padding-top: 5%;
+}
+
+#projects .card {
+  width: 90%;
+  background-color: transparent;
+  -webkit-box-shadow: 0.5px 0.5px 5px #ff6666;
+          box-shadow: 0.5px 0.5px 5px #ff6666;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin: 10px 0 15px 0;
+}
+
+#projects .card:hover {
+  -webkit-box-shadow: 0.5px 0.5px 15px #ff6666;
+          box-shadow: 0.5px 0.5px 15px #ff6666;
+}
+
+#projects .card img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 280px;
+}
+
+#projects .card .btn {
+  background-color: #ff6666;
+  color: white;
+  -webkit-box-shadow: 0.5px 0.5px 10px #ff6666;
+          box-shadow: 0.5px 0.5px 10px #ff6666;
+  margin-left: 8px;
+  margin-top: 15px;
+}
+
+#projects .card .btn:hover {
+  background-color: white;
+  color: #ff6666;
+  border: 1px solid #ff6666;
+}
+
+#projects .project-skills {
+  display: inline-block;
+  margin: 8px;
+  padding: 5px 10px;
+  border: 2px solid #ff6666;
+  border-radius: 8px;
+}
+
+#projects .alert-text {
+  color: #ff6666;
+  padding-top: 20px;
+  padding-left: 10px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  display: none;
+}
+
+#projects #project-spacer {
+  padding-bottom: 15%;
+}
+
+@media only screen and (max-width: 1200px) {
+  #projects .img-col {
+    display: none !important;
+  }
+}
+
+#contact {
+  color: white !important;
+  padding-top: 5%;
+}
+
+#contact #contact-question {
+  text-align: center;
+}
+
+#contact .contact-form {
+  text-align: center;
+}
+
+#contact .contact-form form {
+  width: 50%;
+  display: inline-block;
+}
+
+#contact .contact-form .form-control {
+  color: black;
+}
+
+#contact .contact-form .form-control:hover {
+  background-color: transparent;
+  -webkit-box-shadow: 0.5px 0.5px 15px #ff6666;
+          box-shadow: 0.5px 0.5px 15px #ff6666;
+}
+
+#contact .contact-form .submit {
+  background-color: transparent;
+  color: #ff6666;
+  border: 1px solid #ff6666;
+  padding: 8px 25px;
+}
+
+#contact .contact-form .submit:hover {
+  cursor: pointer;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  font-size: 22px;
+}
+
+#contact .alert {
+  display: none;
+  color: black;
+}
+
+#contact .fa-check {
+  color: #5cf55c;
+}
+
+html, body {
+  height: 100%;
+  scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.h-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.v-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.underline {
+  border-bottom: 3px solid #ff6666;
+}
+
+#main-content {
+  height: 100vh;
+}
+
+#about {
+  min-height: 100vh;
+}
+
+#skills {
+  min-height: 100vh;
+}
+
+#projects {
+  min-height: 100vh;
+}
+
+#contact {
+  min-height: 100vh;
+}
+
+hr {
+  border: 0.5px solid #ff6666;
+  width: 60%;
+  margin-top: 5%;
+}
+
+h1 {
+  font-family: 'Reem Kufi', sans-serif;
+}
+
+h1, h4 {
+  color: #ff6666;
+}
+
+p, ul {
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */
