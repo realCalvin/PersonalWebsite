@@ -17,8 +17,12 @@ $img-size: 300px;
         }
         img{
             display: flex;
+            justify-content: center;
             align-items: center;
             height: 280px;
+        }
+        .card-text{
+            padding-left: 8px;
         }
         .btn{
             background-color: $primary-color;
@@ -59,9 +63,32 @@ $img-size: 300px;
         padding-bottom: 15%;
     }
 
-    @media only screen and (max-width: 1200px) {
-        .img-col{
-            display: none !important;
+    @media only screen and (max-width: 2000px) {
+        .img-fluid{
+            height: 325px !important;
+            width: 80% !important;
+        }
+    }
+    @media only screen and (max-width: 1400px) {
+        .img-fluid{
+            height: 275px !important;
+            width: 100% !important;
+        }
+    }
+    @media only screen and (max-width: 994px) {
+        h4{
+            padding-top: 15px;
+        }
+        .img-fluid{
+            
+            height: 300px !important;
+            width: 70% !important;
+        }
+    }
+    @media only screen and (max-width: 775px) {
+        .img-fluid{
+            height: 250px !important;
+            width: 100% !important;
         }
     }
 }

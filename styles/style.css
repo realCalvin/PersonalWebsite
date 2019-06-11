@@ -198,10 +198,17 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   height: 280px;
+}
+
+#projects .card .card-text {
+  padding-left: 8px;
 }
 
 #projects .card .btn {
@@ -247,9 +254,34 @@
   padding-bottom: 15%;
 }
 
-@media only screen and (max-width: 1200px) {
-  #projects .img-col {
-    display: none !important;
+@media only screen and (max-width: 2000px) {
+  #projects .img-fluid {
+    height: 325px !important;
+    width: 80% !important;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  #projects .img-fluid {
+    height: 275px !important;
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 994px) {
+  #projects h4 {
+    padding-top: 15px;
+  }
+  #projects .img-fluid {
+    height: 300px !important;
+    width: 70% !important;
+  }
+}
+
+@media only screen and (max-width: 775px) {
+  #projects .img-fluid {
+    height: 250px !important;
+    width: 100% !important;
   }
 }
 

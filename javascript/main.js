@@ -11,7 +11,7 @@ var themes = [
         transparent: "rgb(255,255,255,0)"
     },
     {
-        // Light Coral
+        // Orange
         backgroundColor: "rgb(255, 255, 255)",
         navbarBackgroundColor: "rgba(255, 255, 255, 0.6)",
         primaryColor: "rgb(255, 140, 0)",
@@ -42,19 +42,100 @@ var themes = [
         secondaryColor: "rgb(0,0,0)",
         transparent: "rgb(255,255,255,0)"
     },
+    {
+        // Clear Chill
+        backgroundColor: "rgb(255, 255, 255)",
+        navbarBackgroundColor: "rgba(255, 255, 255, 0.6)",
+        primaryColor: "rgb(27, 156, 252)",
+        secondaryColor: "rgb(0,0,0)",
+        transparent: "rgb(255,255,255,0)"
+    },
+    {
+        // green Teal
+        backgroundColor: "rgb(255, 255, 255)",
+        navbarBackgroundColor: "rgba(255, 255, 255, 0.6)",
+        primaryColor: "rgb(5, 196, 107)",
+        secondaryColor: "rgb(0,0,0)",
+        transparent: "rgb(255,255,255,0)"
+    },
+    {
+        // Auora Green
+        backgroundColor: "rgb(255, 255, 255)",
+        navbarBackgroundColor: "rgba(255, 255, 255, 0.6)",
+        primaryColor: "rgb(120, 224, 143)",
+        secondaryColor: "rgb(0,0,0)",
+        transparent: "rgb(255,255,255,0)"
+    },
+    {
+        // Deep Rose
+        backgroundColor: "rgb(255, 255, 255)",
+        navbarBackgroundColor: "rgba(255, 255, 255, 0.6)",
+        primaryColor: "rgb(196, 69, 105)",
+        secondaryColor: "rgb(0,0,0)",
+        transparent: "rgb(255,255,255,0)"
+    },
+    {
+        // Saturted Sky
+        backgroundColor: "rgb(255, 255, 255)",
+        navbarBackgroundColor: "rgba(255, 255, 255, 0.6)",
+        primaryColor: "rgb(83, 82, 237)",
+        secondaryColor: "rgb(0,0,0)",
+        transparent: "rgb(255,255,255,0)"
+    },
+    {
+        // Watermelon
+        backgroundColor: "rgb(255, 255, 255)",
+        navbarBackgroundColor: "rgba(255, 255, 255, 0.6)",
+        primaryColor: "rgb(255, 71, 87)",
+        secondaryColor: "rgb(0,0,0)",
+        transparent: "rgb(255,255,255,0)"
+    },
+    {
+        // Greenland Green
+        backgroundColor: "rgb(255, 255, 255)",
+        navbarBackgroundColor: "rgba(255, 255, 255, 0.6)",
+        primaryColor: "rgb(34, 166, 179)",
+        secondaryColor: "rgb(0,0,0)",
+        transparent: "rgb(255,255,255,0)"
+    },
+    {
+        // Orange Tomato
+        backgroundColor: "rgb(255, 255, 255)",
+        navbarBackgroundColor: "rgba(255, 255, 255, 0.6)",
+        primaryColor: "rgb(255, 99, 72)",
+        secondaryColor: "rgb(0,0,0)",
+        transparent: "rgb(255,255,255,0)"
+    },
+    {
+        // pink rose
+        backgroundColor: "rgb(255, 255, 255)",
+        navbarBackgroundColor: "rgba(255, 255, 255, 0.6)",
+        primaryColor: "rgb(237, 76, 103)",
+        secondaryColor: "rgb(0,0,0)",
+        transparent: "rgb(255,255,255,0)"
+    },
 ];
 
-function randomTheme() { // returns a random number
+var themeArr = [];
+var counter = 0;
+const numOfThemes = 14;
 
+
+function randomTheme() { // returns a random number
+    // no duplicate themes 
+    while (themeArr.length < numOfThemes) {
+        var ran = Math.floor(Math.random() * numOfThemes);
+        if (themeArr.indexOf(ran) === -1) themeArr.push(ran);
+    }
+    console.log(themeArr)
 }
 
-
-$('#color-btn').click(function () {
-
-    var primaryColor = themes[4]["primaryColor"];
-    var secondaryColor = themes[4]["secondaryColor"];
-    var backgroundColor = themes[4]["backgroundColor"];
-    var transparent = themes[4]["transparent"];
+function setTheme() {
+    var num = themeArr[counter];
+    var primaryColor = themes[num]["primaryColor"];
+    var secondaryColor = themes[num]["secondaryColor"];
+    var backgroundColor = themes[num]["backgroundColor"];
+    var transparent = themes[num]["transparent"];
     $(".primaryColor").css({ "color": primaryColor, "border-color": primaryColor });
     $("footer").css("background-color", primaryColor);
     $("hr").css("border-color", primaryColor);
@@ -70,14 +151,29 @@ $('#color-btn').click(function () {
     }, function () {
         $(this).css({ "color": secondaryColor, "background-color": transparent });
     })
+    setParticleColor(primaryColor);
+}
 
+function setParticleColor(rgb) {
     // convert rgb -> hex to change particle color
     var h = x => '#' + x.match(/\d+/g).map(y = z => ((+z < 16) ? '0' : '') + (+z).toString(16)).join('');
-    var particleColor = h(primaryColor);
+    var particleColor = h(rgb);
     $.each(pJSDom[0].pJS.particles.array, function (i, p) {
         pJSDom[0].pJS.particles.array[i].color.value = particleColor;
         pJSDom[0].pJS.particles.array[i].color.rgb = hexToRgb(particleColor);
     });
+}
+
+
+$('#color-btn').click(function () {
+
+    if (counter >= numOfThemes) {
+        themeArr = [];
+        counter = 0;
+        randomTheme();
+    }
+    setTheme();
+    counter++;
 
 })
 
@@ -91,24 +187,26 @@ $("#p-btn").click(function () {
 
 // Particles JS
 $(document).ready(function () {
+    randomTheme();
+
     particlesJS('particles-js',
         {
             "particles": {
                 "number": {
-                    "value": 5,
+                    "value": 7,
                     "density": {
                         "enable": true,
                         "value_area": 1000
                     }
                 },
                 "color": {
-                    "value": "#f08080"
+                    "value": "#000000"
                 },
                 "shape": {
                     "type": "circle",
                     "stroke": {
                         "width": 0,
-                        "color": "#f08080"
+                        "color": "#000000"
                     },
                     "polygon": {
                         "nb_sides": 2
@@ -130,13 +228,13 @@ $(document).ready(function () {
                     }
                 },
                 "size": {
-                    "value": 3.5,
+                    "value": 5,
                     "random": true,
                     "anim": {
                         "enable": true,
                         "speed": 15,
                         "size_min": 0.7,
-                        "sync": true
+                        "sync": false
                     }
                 },
                 "line_linked": {
@@ -201,14 +299,9 @@ $(document).ready(function () {
             "retina_detect": true
         }
     );
-    console.log("Particles loaded")
-    onChange();
+    setTheme();
+    counter++;
 });
-
-function onChange() {
-
-}
-
 
 // FIREBASE CONTACT FORM
 
