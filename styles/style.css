@@ -3,12 +3,20 @@
   background-color: rgba(255, 255, 255, 0.6);
 }
 
+#navbar #color-btn {
+  color: RGB(240, 128, 128);
+}
+
+#navbar #color-btn:hover {
+  font-size: 26px;
+}
+
 #navbar a {
-  color: #ff6666;
+  color: RGB(240, 128, 128);
 }
 
 #navbar a:hover {
-  border-bottom: 3px solid #ff6666;
+  border-bottom: 3px solid RGB(240, 128, 128);
 }
 
 #landing-page {
@@ -19,7 +27,7 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   text-align: center;
-  color: #ff6666;
+  color: RGB(240, 128, 128);
 }
 
 #landing-page h1 {
@@ -27,7 +35,7 @@
 }
 
 #landing-page #my-name {
-  border-bottom: 3px solid #ff6666;
+  border-bottom: 3px solid RGB(240, 128, 128);
   display: inline-block;
   line-height: 60px;
 }
@@ -39,7 +47,7 @@
 
 #my-icons .fas, #my-icons .fab, #my-icons .far {
   padding: 0px 12px;
-  color: #ff6666;
+  color: RGB(240, 128, 128);
 }
 
 #my-icons .fa-file-pdf:hover {
@@ -171,18 +179,19 @@
 }
 
 #projects .card {
+  color: RGB(240, 128, 128);
   width: 90%;
   background-color: transparent;
-  -webkit-box-shadow: 0.5px 0.5px 5px #ff6666;
-          box-shadow: 0.5px 0.5px 5px #ff6666;
+  -webkit-box-shadow: 0.5px 0.5px 5px;
+          box-shadow: 0.5px 0.5px 5px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   margin: 10px 0 15px 0;
 }
 
 #projects .card:hover {
-  -webkit-box-shadow: 0.5px 0.5px 15px #ff6666;
-          box-shadow: 0.5px 0.5px 15px #ff6666;
+  -webkit-box-shadow: 0.5px 0.5px 15px;
+          box-shadow: 0.5px 0.5px 15px;
 }
 
 #projects .card img {
@@ -196,37 +205,37 @@
 }
 
 #projects .card .btn {
-  background-color: #ff6666;
+  background-color: RGB(240, 128, 128);
   color: white;
-  -webkit-box-shadow: 0.5px 0.5px 10px #ff6666;
-          box-shadow: 0.5px 0.5px 10px #ff6666;
+  -webkit-box-shadow: 0.5px 0.5px 10px;
+          box-shadow: 0.5px 0.5px 10px;
   margin-left: 8px;
   margin-top: 15px;
 }
 
 #projects .card .btn:hover {
   background-color: white;
-  color: #ff6666;
-  border: 1px solid #ff6666;
+  color: RGB(240, 128, 128);
+  border: 1px solid RGB(240, 128, 128);
 }
 
 #projects .project-skills {
   display: inline-block;
   margin: 8px;
   padding: 5px 10px;
-  border: 2px solid #ff6666;
+  border: 2px solid RGB(240, 128, 128);
   border-radius: 8px;
   cursor: default;
 }
 
 #projects .project-skills:hover {
-  background-color: #ff6666;
+  background-color: RGB(240, 128, 128);
   color: white;
   font-size: 22px;
 }
 
 #projects .alert-text {
-  color: #ff6666;
+  color: RGB(240, 128, 128);
   padding-top: 20px;
   padding-left: 10px;
   -webkit-transition: all 0.5s ease;
@@ -263,19 +272,19 @@
 }
 
 #contact .contact-form .form-control {
-  color: black;
+  color: RGB(240, 128, 128);
 }
 
 #contact .contact-form .form-control:hover {
   background-color: transparent;
-  -webkit-box-shadow: 0.5px 0.5px 15px #ff6666;
-          box-shadow: 0.5px 0.5px 15px #ff6666;
+  -webkit-box-shadow: 0.5px 0.5px 15px;
+          box-shadow: 0.5px 0.5px 15px;
 }
 
 #contact .contact-form .submit {
   background-color: transparent;
-  color: #ff6666;
-  border: 1px solid #ff6666;
+  color: RGB(240, 128, 128);
+  border: 1px solid RGB(240, 128, 128);
   padding: 8px 25px;
 }
 
@@ -297,7 +306,7 @@
 
 footer {
   padding: 40px 95px 20px 95px;
-  background-color: #ff6666;
+  background-color: RGB(240, 128, 128);
   text-align: center;
   position: relative;
   margin-top: 10%;
@@ -323,38 +332,33 @@ footer .mail-col {
 }
 
 footer .fa-envelope:hover {
-  color: white;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   font-size: 3em;
 }
 
 footer .fa-phone:hover {
-  color: #2ed573;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   font-size: 3em;
 }
 
 footer .fa-file-pdf:hover {
-  color: white;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  font-size: 3.2em;
+  font-size: 3em;
 }
 
 footer .fa-linkedin:hover {
-  color: #0077b5;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  font-size: 3.4em;
+  font-size: 3em;
 }
 
 footer .fa-github-square:hover {
-  color: #f5f5f5;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  font-size: 3.4em;
+  font-size: 3em;
 }
 
 footer footer .fab {
@@ -400,7 +404,7 @@ html, body {
 }
 
 .underline {
-  border-bottom: 3px solid #ff6666;
+  border-bottom: 3px solid RGB(240, 128, 128);
 }
 
 #particles-js {
@@ -437,7 +441,7 @@ html, body {
 }
 
 hr {
-  border: 0.5px solid #ff6666;
+  border: 0.5px solid RGB(240, 128, 128);
   width: 60%;
   margin-top: 5%;
 }
@@ -447,7 +451,7 @@ h1 {
 }
 
 h1, h3, h4 {
-  color: #ff6666;
+  color: RGB(240, 128, 128);
 }
 
 p, ul {

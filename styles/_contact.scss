@@ -15,11 +15,11 @@
             display: inline-block;
         }
         .form-control{
-            color: $secondary-color;
+            color: $primary-color;
         }
         .form-control:hover{
             background-color: transparent;
-            box-shadow: 0.5px 0.5px 15px $primary-color;
+            box-shadow: 0.5px 0.5px 15px;
         }
         .submit{
             background-color: transparent;

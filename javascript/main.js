@@ -1,3 +1,87 @@
+
+
+// Change Theme Color
+var themes = [
+    {
+        // Light Coral
+        backgroundColor: "rgb(255, 255, 255)",
+        navbarBackgroundColor: "rgba(255, 255, 255, 0.6)",
+        primaryColor: "rgb(240, 128, 128)",
+        secondaryColor: "rgb(0,0,0)",
+        transparent: "rgb(255,255,255,0)"
+    },
+    {
+        // Light Coral
+        backgroundColor: "rgb(255, 255, 255)",
+        navbarBackgroundColor: "rgba(255, 255, 255, 0.6)",
+        primaryColor: "rgb(255, 140, 0)",
+        secondaryColor: "rgb(0,0,0)",
+        transparent: "rgb(255,255,255,0)"
+    },
+    {
+        // Medium Purple
+        backgroundColor: "rgb(255, 255, 255)",
+        navbarBackgroundColor: "rgba(255, 255, 255, 0.6)",
+        primaryColor: "rgb(147, 112, 219)",
+        secondaryColor: "rgb(0,0,0)",
+        transparent: "rgb(255,255,255,0)"
+    },
+    {
+        // Medium Sea Green
+        backgroundColor: "rgb(255, 255, 255)",
+        navbarBackgroundColor: "rgba(255, 255, 255, 0.6)",
+        primaryColor: "rgb(60, 179, 113)",
+        secondaryColor: "rgb(0,0,0)",
+        transparent: "rgb(255,255,255,0)"
+    },
+    {
+        // Teal
+        backgroundColor: "rgb(255, 255, 255)",
+        navbarBackgroundColor: "rgba(255, 255, 255, 0.6)",
+        primaryColor: "rgb(0, 128, 128)",
+        secondaryColor: "rgb(0,0,0)",
+        transparent: "rgb(255,255,255,0)"
+    },
+];
+
+function randomTheme() { // returns a random number
+
+}
+
+
+$('#color-btn').click(function () {
+
+    var primaryColor = themes[4]["primaryColor"];
+    var secondaryColor = themes[4]["secondaryColor"];
+    var backgroundColor = themes[4]["backgroundColor"];
+    var transparent = themes[4]["transparent"];
+    $(".primaryColor").css({ "color": primaryColor, "border-color": primaryColor });
+    $("footer").css("background-color", primaryColor);
+    $("hr").css("border-color", primaryColor);
+    $(".primaryButtonColor").css({ "color": backgroundColor, "background-color": primaryColor });
+    $(".secondaryButtonColor").css({ "color": secondaryColor, "border-color": primaryColor });
+    $(".primaryButtonColor").hover(function () {
+        $(this).css({ "color": primaryColor, "background-color": backgroundColor, "border-color": primaryColor });
+    }, function () {
+        $(this).css({ "color": backgroundColor, "background-color": primaryColor });
+    })
+    $(".secondaryButtonColor").hover(function () {
+        $(this).css({ "color": backgroundColor, "background-color": primaryColor });
+    }, function () {
+        $(this).css({ "color": secondaryColor, "background-color": transparent });
+    })
+
+    // convert rgb -> hex to change particle color
+    var h = x => '#' + x.match(/\d+/g).map(y = z => ((+z < 16) ? '0' : '') + (+z).toString(16)).join('');
+    var particleColor = h(primaryColor);
+    $.each(pJSDom[0].pJS.particles.array, function (i, p) {
+        pJSDom[0].pJS.particles.array[i].color.value = particleColor;
+        pJSDom[0].pJS.particles.array[i].color.rgb = hexToRgb(particleColor);
+    });
+
+})
+
+// Alert for project button
 $("#p-btn").click(function () {
     document.querySelector('.alert-text').style.display = 'block';
     setTimeout(function () {
@@ -5,6 +89,7 @@ $("#p-btn").click(function () {
     }, 3000);
 })
 
+// Particles JS
 $(document).ready(function () {
     particlesJS('particles-js',
         {
@@ -17,13 +102,13 @@ $(document).ready(function () {
                     }
                 },
                 "color": {
-                    "value": "#000000"
+                    "value": "#f08080"
                 },
                 "shape": {
                     "type": "circle",
                     "stroke": {
                         "width": 0,
-                        "color": "#000000"
+                        "color": "#f08080"
                     },
                     "polygon": {
                         "nb_sides": 2
