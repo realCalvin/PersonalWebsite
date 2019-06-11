@@ -15,7 +15,6 @@ html, body{
     cursor: default;
     overflow-x: hidden;
 }
-
 .center{ // center in middle of page
     display: flex;
     justify-content: center;
@@ -32,9 +31,19 @@ html, body{
 .underline{
     border-bottom: 3px solid $primary-color;
 }
-
+#particles-js{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 550vh;
+    width: 100%;
+}
 #main-content{
     height: 100vh;
+    z-index: 1;
+}
+#landing-page{
+    min-height: 100vh;
 }
 #about{
     min-height: 100vh;
@@ -46,7 +55,7 @@ html, body{
     min-height: 100vh;
 }
 #contact{
-    min-height: 100vh;
+    min-height: 50vh;
 }
 
 hr{
