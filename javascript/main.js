@@ -5,6 +5,7 @@ var themes = [
     {
         // Light Coral
         backgroundColor: "rgb(255, 255, 255)",
+        footerColor: "rgb(255, 255, 255)",
         navbarBackgroundColor: "rgba(255, 255, 255, 0.6)",
         primaryColor: "rgb(240, 128, 128)",
         secondaryColor: "rgb(0,0,0)",
@@ -13,6 +14,7 @@ var themes = [
     {
         // Orange
         backgroundColor: "rgb(255, 255, 255)",
+        footerColor: "rgb(255, 255, 255)",
         navbarBackgroundColor: "rgba(255, 255, 255, 0.6)",
         primaryColor: "rgb(255, 140, 0)",
         secondaryColor: "rgb(0,0,0)",
@@ -21,6 +23,7 @@ var themes = [
     {
         // Medium Purple
         backgroundColor: "rgb(255, 255, 255)",
+        footerColor: "rgb(255, 255, 255)",
         navbarBackgroundColor: "rgba(255, 255, 255, 0.6)",
         primaryColor: "rgb(147, 112, 219)",
         secondaryColor: "rgb(0,0,0)",
@@ -29,6 +32,7 @@ var themes = [
     {
         // Medium Sea Green
         backgroundColor: "rgb(255, 255, 255)",
+        footerColor: "rgb(255, 255, 255)",
         navbarBackgroundColor: "rgba(255, 255, 255, 0.6)",
         primaryColor: "rgb(60, 179, 113)",
         secondaryColor: "rgb(0,0,0)",
@@ -37,6 +41,7 @@ var themes = [
     {
         // Teal
         backgroundColor: "rgb(255, 255, 255)",
+        footerColor: "rgb(255, 255, 255)",
         navbarBackgroundColor: "rgba(255, 255, 255, 0.6)",
         primaryColor: "rgb(0, 128, 128)",
         secondaryColor: "rgb(0,0,0)",
@@ -45,6 +50,7 @@ var themes = [
     {
         // Clear Chill
         backgroundColor: "rgb(255, 255, 255)",
+        footerColor: "rgb(255, 255, 255)",
         navbarBackgroundColor: "rgba(255, 255, 255, 0.6)",
         primaryColor: "rgb(27, 156, 252)",
         secondaryColor: "rgb(0,0,0)",
@@ -53,6 +59,7 @@ var themes = [
     {
         // green Teal
         backgroundColor: "rgb(255, 255, 255)",
+        footerColor: "rgb(255, 255, 255)",
         navbarBackgroundColor: "rgba(255, 255, 255, 0.6)",
         primaryColor: "rgb(5, 196, 107)",
         secondaryColor: "rgb(0,0,0)",
@@ -61,6 +68,7 @@ var themes = [
     {
         // Auora Green
         backgroundColor: "rgb(255, 255, 255)",
+        footerColor: "rgb(255, 255, 255)",
         navbarBackgroundColor: "rgba(255, 255, 255, 0.6)",
         primaryColor: "rgb(120, 224, 143)",
         secondaryColor: "rgb(0,0,0)",
@@ -69,6 +77,7 @@ var themes = [
     {
         // Deep Rose
         backgroundColor: "rgb(255, 255, 255)",
+        footerColor: "rgb(255, 255, 255)",
         navbarBackgroundColor: "rgba(255, 255, 255, 0.6)",
         primaryColor: "rgb(196, 69, 105)",
         secondaryColor: "rgb(0,0,0)",
@@ -77,6 +86,7 @@ var themes = [
     {
         // Saturted Sky
         backgroundColor: "rgb(255, 255, 255)",
+        footerColor: "rgb(255, 255, 255)",
         navbarBackgroundColor: "rgba(255, 255, 255, 0.6)",
         primaryColor: "rgb(83, 82, 237)",
         secondaryColor: "rgb(0,0,0)",
@@ -85,6 +95,7 @@ var themes = [
     {
         // Watermelon
         backgroundColor: "rgb(255, 255, 255)",
+        footerColor: "rgb(255, 255, 255)",
         navbarBackgroundColor: "rgba(255, 255, 255, 0.6)",
         primaryColor: "rgb(255, 71, 87)",
         secondaryColor: "rgb(0,0,0)",
@@ -93,6 +104,7 @@ var themes = [
     {
         // Greenland Green
         backgroundColor: "rgb(255, 255, 255)",
+        footerColor: "rgb(255, 255, 255)",
         navbarBackgroundColor: "rgba(255, 255, 255, 0.6)",
         primaryColor: "rgb(34, 166, 179)",
         secondaryColor: "rgb(0,0,0)",
@@ -101,6 +113,7 @@ var themes = [
     {
         // Orange Tomato
         backgroundColor: "rgb(255, 255, 255)",
+        footerColor: "rgb(255, 255, 255)",
         navbarBackgroundColor: "rgba(255, 255, 255, 0.6)",
         primaryColor: "rgb(255, 99, 72)",
         secondaryColor: "rgb(0,0,0)",
@@ -109,6 +122,7 @@ var themes = [
     {
         // pink rose
         backgroundColor: "rgb(255, 255, 255)",
+        footerColor: "rgb(255, 255, 255)",
         navbarBackgroundColor: "rgba(255, 255, 255, 0.6)",
         primaryColor: "rgb(237, 76, 103)",
         secondaryColor: "rgb(0,0,0)",
@@ -117,6 +131,7 @@ var themes = [
     {
         // dark grey
         backgroundColor: "rgb(255, 255, 255)",
+        footerColor: "rgb(255, 255, 255)",
         navbarBackgroundColor: "rgba(255, 255, 255, 0.6)",
         primaryColor: "rgb(72, 85, 100)",
         secondaryColor: "rgb(0,0,0)",
