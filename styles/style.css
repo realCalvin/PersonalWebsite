@@ -489,4 +489,19 @@ h1, h3, h4 {
 p, ul {
   color: black;
 }
+
+@media only screen and (max-width: 800px) {
+  #color-btn{
+    font-size: 15px;
+  }
+  #color-btn:hover{
+    font-size: 15px !important;
+  }
+  #landing-page h1{
+    font-size: 50px;
+  }
+  #landing-page h5{
+    font-size: 20px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

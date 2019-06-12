@@ -6,7 +6,7 @@
     text-align: center;
     color: $primary-color;
     h1{
-        font-size: 80px;
+        font-size: 50px;
     }
     #my-name{
         border-bottom: 3px solid $primary-color;
@@ -51,5 +51,7 @@
         100%{
             transform: translateY(-0%);
         }
+    }
+    @media only screen and (max-width: 600px) {
     }
 }

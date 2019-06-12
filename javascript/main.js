@@ -114,11 +114,138 @@ var themes = [
         secondaryColor: "rgb(0,0,0)",
         transparent: "rgb(255,255,255,0)"
     },
+    {
+        // dark grey
+        backgroundColor: "rgb(255, 255, 255)",
+        navbarBackgroundColor: "rgba(255, 255, 255, 0.6)",
+        primaryColor: "rgb(72, 85, 100)",
+        secondaryColor: "rgb(0,0,0)",
+        transparent: "rgb(255,255,255,0)"
+    },
+    // COLORED BACKGROUND THEMES
+    {
+        // Light Coral
+        backgroundColor: "rgb(240, 128, 128)",
+        footerColor: "rgb(240, 128, 128)",
+        navbarBackgroundColor: "rgba(240, 128, 128, 0.6)",
+        primaryColor: "rgb(255, 255, 255)",
+        secondaryColor: "rgb(255, 255, 255)",
+        transparent: "rgb(255,255,255,0)"
+    },
+    {
+        // Orange
+        backgroundColor: "rgb(255, 140, 0)",
+        footerColor: "rgb(255, 140, 0)",
+        navbarBackgroundColor: "rgba(255, 140, 0, 0.6)",
+        primaryColor: "rgb(255, 255, 255)",
+        secondaryColor: "rgb(255, 255, 255)",
+        transparent: "rgb(255,255,255,0)"
+    },
+    {
+        // Medium Purple
+        backgroundColor: "rgb(147, 112, 219)",
+        footerColor: "rgb(147, 112, 219)",
+        navbarBackgroundColor: "rgba(147, 112, 219, 0.6)",
+        primaryColor: "rgb(255, 255, 255)",
+        secondaryColor: "rgb(255, 255, 255)",
+        transparent: "rgb(255,255,255,0)"
+    },
+    {
+        // Medium Sea Green
+        backgroundColor: "rgb(60, 179, 113)",
+        footerColor: "rgb(60, 179, 113)",
+        navbarBackgroundColor: "rgba(60, 179, 113, 0.6)",
+        primaryColor: "rgb(255, 255, 255)",
+        secondaryColor: "rgb(255, 255, 255)",
+        transparent: "rgb(255,255,255,0)"
+    },
+    {
+        // Teal
+        backgroundColor: "rgb(0, 128, 128)",
+        footerColor: "rgb(0, 128, 128)",
+        navbarBackgroundColor: "rgba(0, 128, 128, 0.6)",
+        primaryColor: "rgb(255, 255, 255)",
+        secondaryColor: "rgb(255, 255, 255)",
+        transparent: "rgb(255,255,255,0)"
+    },
+    {
+        // Clear Chill
+        backgroundColor: "rgb(27, 156, 252)",
+        footerColor: "rgb(27, 156, 252)",
+        navbarBackgroundColor: "rgba(27, 156, 252, 0.6)",
+        primaryColor: "rgb(255, 255, 255)",
+        secondaryColor: "rgb(255, 255, 255)",
+        transparent: "rgb(255,255,255,0)"
+    },
+    {
+        // green Teal
+        backgroundColor: "rgb(5, 196, 107)",
+        footerColor: "rgb(5, 196, 107)",
+        navbarBackgroundColor: "rgba(5, 196, 107, 0.6)",
+        primaryColor: "rgb(255, 255, 255)",
+        secondaryColor: "rgb(255, 255, 255)",
+        transparent: "rgb(255,255,255,0)"
+    },
+    {
+        // Auora Green
+        backgroundColor: "rgb(120, 224, 143)",
+        footerColor: "rgb(120, 224, 143)",
+        navbarBackgroundColor: "rgba(120, 224, 143, 0.6)",
+        primaryColor: "rgb(255, 255, 255)",
+        secondaryColor: "rgb(255, 255, 255)",
+        transparent: "rgb(255,255,255,0)"
+    },
+    {
+        // Watermelon
+        backgroundColor: "rgb(255, 71, 87)",
+        footerColor: "rgb(255, 71, 87)",
+        navbarBackgroundColor: "rgba(255, 71, 87, 0.6)",
+        primaryColor: "rgb(255, 255, 255)",
+        secondaryColor: "rgb(255, 255, 255)",
+        transparent: "rgb(255,255,255,0)"
+    },
+    {
+        // Greenland Green
+        backgroundColor: "rgb(34, 166, 179)",
+        footerColor: "rgb(34, 166, 179)",
+        navbarBackgroundColor: "rgba(34, 166, 179, 0.6)",
+        primaryColor: "rgb(255, 255, 255)",
+        secondaryColor: "rgb(255, 255, 255)",
+        transparent: "rgb(255,255,255,0)"
+    },
+    {
+        // Orange Tomato
+        backgroundColor: "rgb(255, 99, 72)",
+        footerColor: "rgb(255, 99, 72)",
+        navbarBackgroundColor: "rgba(255, 99, 72, 0.6)",
+        primaryColor: "rgb(255, 255, 255)",
+        footerColor: "rgb(255, 99, 72)",
+        secondaryColor: "rgb(255, 255, 255)",
+        transparent: "rgb(255,255,255,0)"
+    },
+    {
+        // pink rose
+        backgroundColor: "rgb(237, 76, 103)",
+        footerColor: "rgb(237, 76, 103)",
+        navbarBackgroundColor: "rgba(237, 76, 103, 0.6)",
+        primaryColor: "rgb(255, 255, 255)",
+        secondaryColor: "rgb(255, 255, 255)",
+        transparent: "rgb(255,255,255,0)"
+    },
+    {
+        // dark grey
+        backgroundColor: "rgb(72, 85, 100)",
+        footerColor: "rgb(72, 85, 100)",
+        navbarBackgroundColor: "rgba(72, 85, 100, 0.6)",
+        primaryColor: "rgb(255, 255, 255)",
+        secondaryColor: "rgb(255, 255, 255)",
+        transparent: "rgb(255,255,255,0)"
+    },
 ];
 
 var themeArr = [];
 var counter = 0;
-const numOfThemes = 14;
+const numOfThemes = 28;
 
 
 function randomTheme() { // returns a random number
@@ -135,9 +262,15 @@ function setTheme() {
     var primaryColor = themes[num]["primaryColor"];
     var secondaryColor = themes[num]["secondaryColor"];
     var backgroundColor = themes[num]["backgroundColor"];
+    var footerColor = themes[num]["footerColor"];
+    var navbarBackgroundColor = themes[num]["navbarBackgroundColor"];
     var transparent = themes[num]["transparent"];
+    $("html").css("background-color", backgroundColor);
+    $("body").css("background-color", backgroundColor);
+    $("nav").css("background-color", navbarBackgroundColor);
+    $(".secondaryColor").css("color", secondaryColor);
     $(".primaryColor").css({ "color": primaryColor, "border-color": primaryColor });
-    $("footer").css("background-color", primaryColor);
+    $("footer").css("background-color", footerColor);
     $("hr").css("border-color", primaryColor);
     $(".primaryButtonColor").css({ "color": backgroundColor, "background-color": primaryColor });
     $(".secondaryButtonColor").css({ "color": secondaryColor, "border-color": primaryColor });
@@ -151,6 +284,7 @@ function setTheme() {
     }, function () {
         $(this).css({ "color": secondaryColor, "background-color": transparent });
     })
+    $(".form-control").css("background-color", backgroundColor);
     setParticleColor(primaryColor);
 }
 
@@ -187,6 +321,7 @@ $("#p-btn").click(function () {
 
 // Particles JS
 $(document).ready(function () {
+
     randomTheme();
 
     particlesJS('particles-js',
@@ -302,6 +437,8 @@ $(document).ready(function () {
     setTheme();
     counter++;
 });
+
+
 
 // FIREBASE CONTACT FORM
 
