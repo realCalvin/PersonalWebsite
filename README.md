@@ -8,3 +8,4 @@ Website Portfolio used to display more about me and my achievements/skills!
 
 ---
 
+<img src="img/portfolio.gif" width="1500">

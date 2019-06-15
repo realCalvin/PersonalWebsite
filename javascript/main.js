@@ -326,6 +326,25 @@ $('#color-btn').click(function () {
 
 })
 
+
+// Type.js
+
+var options = {
+    strings: ["Calvin", "Ambitious", "Dilligent", "Adaptable", "Amazing!!!!"],
+    typeSpeed: 200
+}
+
+var typed = new Typed("#my-name", {
+    strings: options.strings,
+    startDelay: 300,
+    typeSpeed: 80,
+    backSpeed: 80,
+    backDelay: 1000,
+    loop: true,
+    loopCount: Infinity,
+});
+
+
 // Alert for project button
 $("#p-btn").click(function () {
     document.querySelector('.alert-text').style.display = 'block';
