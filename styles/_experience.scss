@@ -1,0 +1,42 @@
+@import './_variables';
+
+$img-size: 300px;
+
+#experience{
+    width: 100%;
+    padding-top: 5%;
+    .card{
+        color: $primary-color;
+        width: 60%;
+        background-color: transparent;
+        box-shadow: 0.5px 0.5px 5px;
+        transition: all 0.3s ease;
+        margin: 10px 0 15px 0;
+        &:hover{
+            box-shadow: 0.5px 0.5px 15px;
+        }
+        .card-text{
+            padding-left: 8px;
+        }
+    }
+    #project-spacer{
+        padding-bottom: 15%;
+    }
+    .work-date{
+        float: right;
+        font-size: 22px;
+        padding-top: 4px;
+    }
+    @media only screen and (max-width: 1100px){
+        .work-date{
+            display: block;
+            padding-top: 15px;
+            float: none;
+        }
+    }
+    @media only screen and (max-width: 1100px){
+        ul{
+            font-size: 16px;
+        }
+    }
+}

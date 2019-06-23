@@ -3,9 +3,11 @@
 @import "./_landingPage";
 @import "./_about";
 @import "./_skills";
+@import "./_experience";
 @import "./_projects";
 @import "./_contact";
 @import "./_footer";
+
 
 html, body{
     height: 100%;
@@ -49,6 +51,9 @@ html, body{
     min-height: 100vh;
 }
 #skills{
+    min-height: 100vh;
+}
+#experience{
     min-height: 100vh;
 }
 #projects{
