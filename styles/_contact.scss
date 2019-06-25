@@ -40,4 +40,9 @@
     .fa-check{
         color: rgb(92, 245, 92);
     }
+    @media only screen and (max-width: 775px) {
+        #contact-form {
+            width: 90%;
+        }
+    }
 }
