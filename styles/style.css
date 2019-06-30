@@ -283,7 +283,6 @@
 #projects .project-skills:hover {
   background-color: RGB(240, 128, 128);
   color: white;
-  font-size: 22px;
 }
 
 #projects .alert-text {
