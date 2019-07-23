@@ -1,4 +1,4 @@
-# [lycalvin.com/](https://www.lycalvin.com/)
+# [lycalvin.com/](https://www.lycalvin.com)
 
 Website Portfolio used to display more about me and my achievements/skills!
 
