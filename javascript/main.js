@@ -269,6 +269,8 @@ function randomTheme() { // returns a random number
         var ran = Math.floor(Math.random() * numOfThemes);
         if (themeArr.indexOf(ran) === -1) themeArr.push(ran);
     }
+    themeArr.splice(themeArr.indexOf(14), 1)
+    themeArr.unshift(14)
     console.log(themeArr)
 }
 

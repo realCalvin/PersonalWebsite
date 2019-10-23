@@ -1,18 +1,18 @@
-@import url(c:\Users\Calvin\Desktop\Portfolio\styles\_variables.css);
+@import url(c:\Users\Calvin\Desktop\Portfolio\PersonalWebsite\styles\_variables.css);
 #navbar nav {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
 #navbar #color-btn {
-  color: RGB(240, 128, 128);
+  color: #485564;
 }
 
 #navbar a {
-  color: RGB(240, 128, 128);
+  color: #485564;
 }
 
 #navbar a:hover {
-  border-bottom: 3px solid RGB(240, 128, 128);
+  border-bottom: 3px solid #485564;
 }
 
 #landing-page {
@@ -23,7 +23,7 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   text-align: center;
-  color: RGB(240, 128, 128);
+  color: #485564;
 }
 
 #landing-page h1 {
@@ -31,7 +31,7 @@
 }
 
 #landing-page #my-name {
-  border-bottom: 3px solid RGB(240, 128, 128);
+  border-bottom: 3px solid #485564;
   display: inline-block;
   line-height: 60px;
 }
@@ -43,7 +43,7 @@
 
 #my-icons .fas, #my-icons .fab, #my-icons .far {
   padding: 0px 12px;
-  color: RGB(240, 128, 128);
+  color: #485564;
 }
 
 #my-icons .fa-file-pdf:hover {
@@ -175,7 +175,7 @@
 }
 
 #experience .card {
-  color: RGB(240, 128, 128);
+  color: #485564;
   width: 60%;
   background-color: transparent;
   -webkit-box-shadow: 0.5px 0.5px 5px;
@@ -224,7 +224,7 @@
 }
 
 #projects .card {
-  color: RGB(240, 128, 128);
+  color: #485564;
   width: 90%;
   background-color: transparent;
   -webkit-box-shadow: 0.5px 0.5px 5px;
@@ -257,7 +257,7 @@
 }
 
 #projects .card .btn {
-  background-color: RGB(240, 128, 128);
+  background-color: #485564;
   color: white;
   -webkit-box-shadow: 0.5px 0.5px 10px;
           box-shadow: 0.5px 0.5px 10px;
@@ -267,26 +267,26 @@
 
 #projects .card .btn:hover {
   background-color: white;
-  color: RGB(240, 128, 128);
-  border: 1px solid RGB(240, 128, 128);
+  color: #485564;
+  border: 1px solid #485564;
 }
 
 #projects .project-skills {
   display: inline-block;
   margin: 8px;
   padding: 5px 10px;
-  border: 2px solid RGB(240, 128, 128);
+  border: 2px solid #485564;
   border-radius: 8px;
   cursor: default;
 }
 
 #projects .project-skills:hover {
-  background-color: RGB(240, 128, 128);
+  background-color: #485564;
   color: white;
 }
 
 #projects .alert-text {
-  color: RGB(240, 128, 128);
+  color: #485564;
   padding-top: 20px;
   padding-left: 10px;
   -webkit-transition: all 0.5s ease;
@@ -351,7 +351,7 @@
 }
 
 #contact .contact-form .form-control {
-  color: RGB(240, 128, 128);
+  color: #485564;
 }
 
 #contact .contact-form .form-control:hover {
@@ -362,8 +362,8 @@
 
 #contact .contact-form .submit {
   background-color: transparent;
-  color: RGB(240, 128, 128);
-  border: 1px solid RGB(240, 128, 128);
+  color: #485564;
+  border: 1px solid #485564;
   padding: 8px 25px;
 }
 
@@ -391,7 +391,7 @@
 
 footer {
   padding: 40px 95px 20px 95px;
-  background-color: RGB(240, 128, 128);
+  background-color: #485564;
   text-align: center;
   position: relative;
   margin-top: 10%;
@@ -489,7 +489,7 @@ html, body {
 }
 
 .underline {
-  border-bottom: 3px solid RGB(240, 128, 128);
+  border-bottom: 3px solid #485564;
 }
 
 #particles-js {
@@ -530,7 +530,7 @@ html, body {
 }
 
 hr {
-  border: 0.5px solid RGB(240, 128, 128);
+  border: 0.5px solid #485564;
   width: 60%;
   margin-top: 5%;
 }
@@ -540,7 +540,7 @@ h1 {
 }
 
 h1, h3, h4 {
-  color: RGB(240, 128, 128);
+  color: #485564;
 }
 
 p, ul {
