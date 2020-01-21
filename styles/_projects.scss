@@ -1,95 +1,95 @@
-@import './_variables';
+@import "./_variables";
 
 $img-size: 300px;
 
-#projects{
-    width: 100%;
-    padding-top: 5%;
-    .card{
+#projects {
+  width: 100%;
+  padding-top: 5%;
+  .card {
+    color: $primary-color;
+    width: 90%;
+    background-color: transparent;
+    box-shadow: 0.5px 0.5px 5px;
+    transition: all 0.3s ease;
+    margin: 10px 0 15px 0;
+    &:hover {
+      box-shadow: 0.5px 0.5px 15px;
+    }
+    img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 300px;
+      width: 500px;
+    }
+    .card-text {
+      padding-left: 8px;
+    }
+    .btn {
+      background-color: $primary-color;
+      color: $background-color;
+      box-shadow: 0.5px 0.5px 10px;
+      margin-left: 8px;
+      margin-top: 15px;
+      &:hover {
+        background-color: $background-color;
         color: $primary-color;
-        width: 90%;
-        background-color: transparent;
-        box-shadow: 0.5px 0.5px 5px;
-        transition: all 0.3s ease;
-        margin: 10px 0 15px 0;
-        &:hover{
-            box-shadow: 0.5px 0.5px 15px;
-        }
-        img{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 280px;
-        }
-        .card-text{
-            padding-left: 8px;
-        }
-        .btn{
-            background-color: $primary-color;
-            color: $background-color;
-            box-shadow: 0.5px 0.5px 10px;
-            margin-left: 8px;
-            margin-top: 15px;
-            &:hover{
-                background-color: $background-color;
-                color: $primary-color;
-                border: 1px solid $primary-color;
-            }
-        }
+        border: 1px solid $primary-color;
+      }
     }
-    .project-skills{
-        display: inline-block;
-        margin: 8px;
-        padding: 5px 10px;
-        border: 2px solid $primary-color;
-        border-radius: 8px;
-        cursor: default;
-        &:hover{
-            background-color: $primary-color;
-            color: $background-color;
-        }
+  }
+  .project-skills {
+    display: inline-block;
+    margin: 8px;
+    padding: 5px 10px;
+    border: 2px solid $primary-color;
+    border-radius: 8px;
+    cursor: default;
+    &:hover {
+      background-color: $primary-color;
+      color: $background-color;
     }
-    .alert-text{
-        color: $primary-color;
-        padding-top: 20px;
-        padding-left: 10px;
-        transition: all 0.5s ease;
-        display: none;
-    }
+  }
+  .alert-text {
+    color: $primary-color;
+    padding-top: 20px;
+    padding-left: 10px;
+    transition: all 0.5s ease;
+    display: none;
+  }
 
-    #project-spacer{
-        padding-bottom: 15%;
-    }
+  #project-spacer {
+    padding-bottom: 15%;
+  }
 
-    @media only screen and (max-width: 2000px) {
-        .img-fluid{
-            height: 325px !important;
-            width: 80% !important;
-        }
+  @media only screen and (max-width: 2000px) {
+    .img-fluid {
+      height: 325px !important;
+      width: 80% !important;
     }
-    @media only screen and (max-width: 1400px) {
-        .img-fluid{
-            height: 275px !important;
-            width: 100% !important;
-        }
+  }
+  @media only screen and (max-width: 1400px) {
+    .img-fluid {
+      height: 275px !important;
+      width: 100% !important;
     }
-    @media only screen and (max-width: 994px) {
-        h4{
-            padding-top: 15px;
-        }
-        .img-fluid{
-            
-            height: 300px !important;
-            width: 70% !important;
-        }
-        .card{
-            width: 85%;
-        }
+  }
+  @media only screen and (max-width: 994px) {
+    h4 {
+      padding-top: 15px;
     }
-    @media only screen and (max-width: 775px) {
-        .img-fluid{
-            height: 250px !important;
-            width: 100% !important;
-        }
+    .img-fluid {
+      height: 300px !important;
+      width: 70% !important;
     }
+    .card {
+      width: 85%;
+    }
+  }
+  @media only screen and (max-width: 775px) {
+    .img-fluid {
+      height: 250px !important;
+      width: 100% !important;
+    }
+  }
 }
