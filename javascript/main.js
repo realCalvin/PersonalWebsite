@@ -1,4 +1,4 @@
-
+AOS.init();
 
 // Change Theme Color
 var themes = [
@@ -302,6 +302,9 @@ function setTheme() {
         $(this).css({ "color": secondaryColor, "background-color": transparent });
     })
     $(".form-control").css("background-color", backgroundColor);
+    $(".marker").css("background-color", primaryColor);
+    var style = document.querySelector('.container').style;
+    style.setProperty('--color', primaryColor);
     setParticleColor(primaryColor);
 }
 

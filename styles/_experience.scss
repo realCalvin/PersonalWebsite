@@ -5,39 +5,85 @@ $img-size: 300px;
 #experience{
     width: 100%;
     padding-top: 5%;
-    .card{
-        color: $primary-color;
-        width: 60%;
-        background-color: transparent;
-        box-shadow: 0.5px 0.5px 5px;
-        transition: all 0.3s ease;
-        margin: 10px 0 15px 0;
-        &:hover{
-            box-shadow: 0.5px 0.5px 15px;
-        }
-        .card-text{
-            padding-left: 8px;
-        }
-    }
     #project-spacer{
         padding-bottom: 15%;
     }
-    .work-date{
-        float: right;
-        font-size: 22px;
-        padding-top: 4px;
-    }
-    @media only screen and (max-width: 1100px){
-        .work-date{
-            display: block;
-            padding-top: 15px;
-            float: none;
-        }
-        ul{
-            font-size: 16px;
-        }
-        .card{
-            width: 85%;
-        }
+    .container {
+        width: 90%;
+        padding: 50px 0;
+        margin: 50px auto;
+        position: relative;
+        overflow: hidden;
+     }
+     
+     .container:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 8px;
+        margin-left: -1px;
+        width: 2px;
+        height: 100%;
+        background: var(--color);
+        z-index: 1
+     }
+     
+     .timeline-block {
+        width: 100%;
+        margin-bottom: 30px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-box-pack: justify;
+        justify-content: space-between;
+        clear: both;
+     }
+     
+     .timeline-block-right {
+        float: none;
+     }
+     
+     .timeline-block-left {
+        float: none;
+        direction: ltr;
+     }
+
+     .left-timeline-points {
+        direction: ltr;
+        padding: 5px 0 0 20px;
+     }
+     
+     .marker {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 2px solid #F5F7FA;
+        background: $primary-color;
+        margin-top: 10px;
+        z-index: 9999
+     }
+     
+     .timeline-content {
+        width: 95%;
+        padding: 0 15px;
+        direction: ltr;
+     }
+     
+     .timeline-content span {
+        font-size: 18px;
+        opacity: 0.8;
+     }
+
+     .inline-column {
+         display: inline-block;
+         img {
+             height: 100px;
+             width: 100px;
+             margin-bottom: 15px;
+             margin-right: 10px;
+         }
     }
 }
