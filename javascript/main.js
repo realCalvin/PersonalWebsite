@@ -271,7 +271,6 @@ function randomTheme() { // returns a random number
     }
     themeArr.splice(themeArr.indexOf(14), 1)
     themeArr.unshift(14)
-    console.log(themeArr)
 }
 
 function setTheme() {
